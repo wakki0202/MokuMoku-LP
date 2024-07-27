@@ -122,11 +122,75 @@
           </div>
         </div>
         <div
-          class="bg-gray-500 w-5/12 flex items-center justify-center text-white my-8 relative z-20"
+          class="bg-white w-5/12 flex items-center justify-center text-whiteb mt-28 mb-24 relative z-20 border-2 border-gray-500 rounded-lg"
         >
-          お問い合わせフォーム
-
-          <input type="text" />
+          <div class="w-11/12 m-auto relative">
+            <p
+              class="absolute text-white text-center bg-[#F36B03] text-2xl px-4 py-3 rounded-lg top-[-65px] left-[50%] translate-x-[-50%] w-11/12"
+            >
+              お問い合わせはここから！
+            </p>
+            <form class="text-black flex flex-col gap-4">
+              <div>
+                <p for="email">会社名</p>
+                <input
+                  id="company"
+                  type="text"
+                  name="name"
+                  placeholder="株式会社sample"
+                  class="border-2 border-gray-500 rounded-lg py-1 px-2 w-full"
+                />
+              </div>
+              <div>
+                <p for="email">お名前</p>
+                <input
+                  id="email"
+                  type="text"
+                  name="name"
+                  placeholder="もくもく太郎"
+                  class="border-2 border-gray-500 rounded-lg py-1 px-2 w-full"
+                />
+              </div>
+              <div>
+                <p for="email">メールアドレス</p>
+                <input
+                  id="email"
+                  type="text"
+                  name="name"
+                  placeholder="example@mail.co.jp"
+                  class="border-2 border-gray-500 rounded-lg py-1 px-2 w-full"
+                />
+              </div>
+              <div>
+                <p for="email">電話番号</p>
+                <input
+                  id="email"
+                  type="text"
+                  name="name"
+                  placeholder="09000000000"
+                  class="border-2 border-gray-500 rounded-lg py-1 px-2 w-full"
+                />
+              </div>
+              <div>
+                <p for="msg">お問い合わせ内容</p>
+                <textarea
+                  id="msg"
+                  name="name"
+                  placeholder="お気軽にお問い合わせください。"
+                  rows="5"
+                  class="border-2 border-gray-500 rounded-lg py-1 px-2 w-full"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                name="button"
+                value="送信"
+                class="rounded-lg bg-[#F36B03] text-white w-full py-3 mt-4"
+              >
+                問い合わせを送る
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -134,7 +198,77 @@
     <!-- main-wrap -->
     <div id="main-wrap">
       <div id="fixed-contactbox" class="fixed right-3 top-3 z-10">
-        <div class="w-[25vw] h-96 bg-white rounded-xl"></div>
+        <div
+          class="bg-white w-[25vw] pt-16 pb-12 flex items-center justify-center text-whiteb mt-16 mb-24 relative z-20 border-2 border-gray-500 rounded-lg"
+        >
+          <div class="w-11/12 m-auto relative">
+            <p
+              class="absolute text-white text-center bg-[#F36B03] text-2xl px-4 py-4 rounded-lg top-[-85px] left-[50%] translate-x-[-50%] w-[99%]"
+            >
+              お問い合わせはここから！
+            </p>
+            <form class="text-black flex flex-col gap-4">
+              <div>
+                <p for="email">会社名</p>
+                <input
+                  id="company"
+                  type="text"
+                  name="name"
+                  placeholder="株式会社sample"
+                  class="border-2 border-gray-500 rounded-lg py-1 px-2 w-full"
+                />
+              </div>
+              <div>
+                <p for="email">お名前</p>
+                <input
+                  id="email"
+                  type="text"
+                  name="name"
+                  placeholder="もくもく太郎"
+                  class="border-2 border-gray-500 rounded-lg py-1 px-2 w-full"
+                />
+              </div>
+              <div>
+                <p for="email">メールアドレス</p>
+                <input
+                  id="email"
+                  type="text"
+                  name="name"
+                  placeholder="example@mail.co.jp"
+                  class="border-2 border-gray-500 rounded-lg py-1 px-2 w-full"
+                />
+              </div>
+              <div>
+                <p for="email">電話番号</p>
+                <input
+                  id="email"
+                  type="text"
+                  name="name"
+                  placeholder="09000000000"
+                  class="border-2 border-gray-500 rounded-lg py-1 px-2 w-full"
+                />
+              </div>
+              <div>
+                <p for="msg">お問い合わせ内容</p>
+                <textarea
+                  id="msg"
+                  name="name"
+                  placeholder="お気軽にお問い合わせください。"
+                  rows="5"
+                  class="border-2 border-gray-500 rounded-lg py-1 px-2 w-full"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                name="button"
+                value="送信"
+                class="rounded-lg bg-[#F36B03] text-white w-full py-3 mt-4"
+              >
+                問い合わせを送る
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
       <section
         id=""
@@ -1641,9 +1775,81 @@
           <div
             class="w-[95%] m-auto bg-white relative pb-20 rounded-bl-xl rounded-br-xl"
           >
-            <h2 class="text-center font-bold text-[2.8vw] pt-12">
+            <h2 class="text-center font-bold text-[2.8vw] pt-20">
               お問い合わせフォーム
             </h2>
+
+            <div
+              class="bg-white w-9/12 m-auto pt-8 pb-12 flex items-center justify-center text-whiteb mb-24 relative z-20 rounded-lg"
+            >
+              <div class="w-11/12 m-auto relative">
+                <!-- <p
+                  class="absolute text-white text-center bg-[#F36B03] text-2xl px-4 py-4 rounded-lg top-[-85px] left-[50%] translate-x-[-50%] w-[99%]"
+                >
+                  お問い合わせはここから！
+                </p> -->
+                <form class="text-black flex flex-col gap-4">
+                  <div>
+                    <p for="email">会社名</p>
+                    <input
+                      id="company"
+                      type="text"
+                      name="name"
+                      placeholder="株式会社sample"
+                      class="border-2 border-gray-500 rounded-lg py-2 px-2 w-full"
+                    />
+                  </div>
+                  <div>
+                    <p for="email">お名前</p>
+                    <input
+                      id="email"
+                      type="text"
+                      name="name"
+                      placeholder="もくもく太郎"
+                      class="border-2 border-gray-500 rounded-lg py-2 px-2 w-full"
+                    />
+                  </div>
+                  <div>
+                    <p for="email">メールアドレス</p>
+                    <input
+                      id="email"
+                      type="text"
+                      name="name"
+                      placeholder="example@mail.co.jp"
+                      class="border-2 border-gray-500 rounded-lg py-2 px-2 w-full"
+                    />
+                  </div>
+                  <div>
+                    <p for="email">電話番号</p>
+                    <input
+                      id="email"
+                      type="text"
+                      name="name"
+                      placeholder="09000000000"
+                      class="border-2 border-gray-500 rounded-lg py-2 px-2 w-full"
+                    />
+                  </div>
+                  <div>
+                    <p for="msg">お問い合わせ内容</p>
+                    <textarea
+                      id="msg"
+                      name="name"
+                      placeholder="お気軽にお問い合わせください。"
+                      rows="5"
+                      class="border-2 border-gray-500 rounded-lg py-2 px-2 w-full"
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    name="button"
+                    value="送信"
+                    class="rounded-lg bg-[#F36B03] text-white w-full py-5 mt-4 text-xl"
+                  >
+                    問い合わせを送る
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
