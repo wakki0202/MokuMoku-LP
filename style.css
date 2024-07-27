@@ -2,3 +2,32 @@
 body {
   font-family: "Zen Maru Gothic", serif;
 }
+
+.carousel-item {
+  display: none;
+}
+.carousel-item.active {
+  display: block;
+}
+
+.slick-arrow.slick-next:before {
+  content: "▶︎";
+  color: black;
+}
+
+.slick-arrow.slick-prev:before {
+  content: "◀";
+  color: black;
+}
+
+#vertical-text {
+  writing-mode: vertical-rl;
+}
+
+.accordion-content {
+  display: none;
+}
+
+.rotate-90 {
+  transform: rotate(270deg);
+}

@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
     <title>記事代行作成サービス MokuMoku</title>
   </head>
   <body>
@@ -819,12 +830,91 @@
 
             <h3 class="text-center pt-16 text-[2vw]">丸っとプラン</h3>
 
-            <p class="text-center pt-8">
+            <p class="text-center pt-8 text-2xl">
               上記切り分けプランがセットになった丸っとプランもございます！
             </p>
 
+            <div class="w-10/12 m-auto text-center flex justify-center pt-6">
+              <table class="border-separate border-spacing-0 text-2xl">
+                <tr class="text-white">
+                  <th
+                    class="bg-[#2696B0] rounded-tl-xl border-r border-[#B3B3B3] py-4 px-8"
+                  ></th>
+                  <th class="bg-[#2696B0] border-r border-[#B3B3B3] py-4 px-8">
+                    プラン❶
+                  </th>
+                  <th class="bg-[#2696B0] border-r border-[#B3B3B3] py-4 px-8">
+                    プラン❷
+                  </th>
+                  <th class="bg-[#2696B0] rounded-tr-xl py-4 px-8">プラン❸</th>
+                </tr>
+                <tr>
+                  <td class="border border-[#B3B3B3] py-8 px-8">1記事当たり</td>
+                  <td
+                    class="border border-[#B3B3B3] py-8 px-8 text-3xl font-bold"
+                  >
+                    20,000円
+                  </td>
+                  <td
+                    class="border border-[#B3B3B3] py-8 px-8 text-3xl font-bold"
+                  >
+                    19,000円
+                  </td>
+                  <td
+                    class="text-red-500 border border-[#B3B3B3] py-8 px-8 text-3xl font-bold"
+                  >
+                    18,000円
+                  </td>
+                </tr>
+                <tr class="rounded-xl border border-[#B3B3B3]">
+                  <td class="rounded-bl-xl border border-[#B3B3B3] py-8 px-8">
+                    記事数
+                  </td>
+                  <td class="border border-[#B3B3B3] py-8 px-8">1記事</td>
+                  <td class="border border-[#B3B3B3] py-8 px-8">4記事以上</td>
+                  <td class="rounded-br-xl border border-[#B3B3B3] py-8 px-8">
+                    8記事以上
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="flex justify-center w-10/12 m-auto gap-6 mt-8">
+              <div class="w-5/12">
+                <h4
+                  class="text-white font-bold bg-[#2696B0] rounded-lg py-2 px-4 text-center text-xl"
+                >
+                  対応業務
+                </h4>
+
+                <div class="flex justify-between pt-4 text-xl">
+                  <div class="w-[55%] flex flex-col gap-3">
+                    <p>● キーワード選定</p>
+                    <p>● 構成案作成</p>
+                    <p>● ライティング</p>
+                    <p>● 定期ミーティング</p>
+                  </div>
+                  <div class="w-[40%] flex flex-col gap-3">
+                    <p>● 画像選定</p>
+                    <p>● 校閲</p>
+                    <p>● 修正対応</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-5/12">
+                <h4
+                  class="text-white font-bold bg-[#2696B0] rounded-lg py-2 px-4 text-center text-xl"
+                >
+                  文字数
+                </h4>
+
+                <p class="pt-8 text-center text-2xl">1記事2000字から</p>
+              </div>
+            </div>
+
             <div
-              class="w-10/12 m-auto bg-[#F36B03] rounded-xl mt-28 py-6 hover:bg-yellow-500 duration-200"
+              class="w-10/12 m-auto bg-[#F36B03] rounded-xl mt-16 py-6 hover:bg-yellow-500 duration-200"
             >
               <a
                 href=""
@@ -836,86 +926,724 @@
           </div>
         </div>
       </section>
-      <section></section>
-      <section></section>
-      <section class="w-9/12">
-        <div
-          class="w-10/12 m-auto bg-white p-5 rounded shadow-lg my-16 text-xl"
-        >
-          <h1 class="text-2xl font-bold mb-4">よくある質問</h1>
+      <section
+        id=""
+        class="w-full bg-gradient-to-t from-[#33CC8C] to-[#6CA7E2]"
+      >
+        <div class="w-9/12">
+          <div class="w-[95%] m-auto bg-white relative pb-36">
+            <h2 class="text-center font-bold text-[2.8vw] pt-24">
+              他社との比較
+            </h2>
 
-          <div class="border-b">
-            <button
-              class="w-full text-left py-3 px-4 font-semibold text-gray-700 hover:bg-gray-100 focus:outline-none accordion"
-            >
-              Q1. サンプル質問1
-            </button>
-            <div class="hidden px-4 py-3 text-gray-600">
-              A1. これはサンプル回答1です。詳細な情報がここに表示されます。
-            </div>
-          </div>
+            <div class="flex items-end justify-center pt-12 gap-4">
+              <div class="flex flex-col gap-5 text-white">
+                <div
+                  class="bg-[#565656] text-center py-4 px-12 text-xl rounded-xl"
+                >
+                  価格
+                </div>
+                <div
+                  class="bg-[#565656] text-center py-4 px-12 text-xl rounded-xl"
+                >
+                  最低発注本数
+                </div>
+                <div
+                  class="bg-[#565656] text-center py-4 px-12 text-xl rounded-xl"
+                >
+                  最低契約期間
+                </div>
+                <div
+                  class="bg-[#565656] text-center py-4 px-12 text-xl rounded-xl"
+                >
+                  チーム体制
+                </div>
+                <div
+                  class="bg-[#565656] text-center py-4 px-12 text-xl rounded-xl"
+                >
+                  初期費用
+                </div>
+                <div
+                  class="bg-[#565656] text-center py-4 px-12 text-xl rounded-xl"
+                >
+                  対応業務
+                </div>
+              </div>
 
-          <div class="border-b">
-            <button
-              class="w-full text-left py-3 px-4 font-semibold text-gray-700 hover:bg-gray-100 focus:outline-none accordion"
-            >
-              Q2. サンプル質問2
-            </button>
-            <div class="hidden px-4 py-3 text-gray-600">
-              A2. これはサンプル回答2です。詳細な情報がここに表示されます。
-            </div>
-          </div>
-
-          <div class="border-b">
-            <button
-              class="w-full text-left py-3 px-4 font-semibold text-gray-700 hover:bg-gray-100 focus:outline-none accordion"
-            >
-              Q3. サンプル質問3
-            </button>
-            <div class="hidden px-4 py-3 text-gray-600">
-              A3. これはサンプル回答3です。詳細な情報がここに表示されます。
-            </div>
-          </div>
-          <div class="border-b">
-            <button
-              class="w-full text-left py-3 px-4 font-semibold text-gray-700 hover:bg-gray-100 focus:outline-none accordion"
-            >
-              Q3. サンプル質問4
-            </button>
-            <div class="hidden px-4 py-3 text-gray-600">
-              A3. これはサンプル回答3です。詳細な情報がここに表示されます。
-            </div>
-          </div>
-          <div class="border-b">
-            <button
-              class="w-full text-left py-3 px-4 font-semibold text-gray-700 hover:bg-gray-100 focus:outline-none accordion"
-            >
-              Q3. サンプル質問5
-            </button>
-            <div class="hidden px-4 py-3 text-gray-600">
-              A3. これはサンプル回答3です。詳細な情報がここに表示されます。
+              <!-- A社 -->
+              <div class="border-2 rounded-xl flex flex-col gap-5">
+                <div
+                  class="bg-[#565656] text-center py-4 px-16 text-xl rounded-xl text-white"
+                >
+                  A社
+                </div>
+                <div class="text-2xl text-center flex flex-col">
+                  <p class="pb-12 pt-2">30,000円</p>
+                  <p class="">2記事〜</p>
+                  <p class="py-12">3カ月〜</p>
+                  <p class="">社内で対応</p>
+                  <p class="py-12">3万円</p>
+                  <p class="pb-4">最低限対応</p>
+                </div>
+              </div>
+              <div
+                class="border-2 border-[#F36B03] rounded-xl flex flex-col gap-5"
+              >
+                <div
+                  class="bg-[#F36B03] text-center py-4 px-12 text-2xl rounded-lg text-white"
+                >
+                  もくもく
+                </div>
+                <div
+                  class="text-[#F36B03] flex flex-col gap-5 text-3xl text-center font-bold"
+                >
+                  <p class="py-3">18,000円〜</p>
+                  <p class="py-3">1記事〜</p>
+                  <p class="py-3">1カ月〜</p>
+                  <p class="py-3">専門チーム<br />で対応</p>
+                  <p class="py-3">0円(無料)</p>
+                  <p class="py-3">丸っと対応</p>
+                </div>
+              </div>
+              <div class="border-2 rounded-xl flex flex-col gap-5">
+                <div
+                  class="bg-[#565656] text-center py-4 px-16 text-xl rounded-xl text-white"
+                >
+                  B社
+                </div>
+                <div class="text-2xl text-center flex flex-col">
+                  <p class="pb-12 pt-2">50,000円</p>
+                  <p class="">5記事〜</p>
+                  <p class="py-12">6カ月〜</p>
+                  <p class="">社内で対応</p>
+                  <p class="py-12">10万円</p>
+                  <p class="pb-4">丸っと対応</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section
-        class="bg-gray-500 text-white font-bold text-center flex items-center justify-center w-9/12 h-[50vh]"
+        id=""
+        class="w-full bg-gradient-to-b from-[#33CC8C] to-[#6CA7E2]"
       >
-        お問い合わせフォーム
+        <div class="w-9/12">
+          <div class="w-[95%] m-auto bg-white relative pb-36">
+            <div class="w-10/12 m-auto">
+              <h2 class="text-2xl font-bold text-center mb-8">ライター紹介</h2>
+              <div class="slider py-8">
+                <!-- Slide 1 -->
+                <div class="text-center px-3">
+                  <div
+                    class="bg-gray-200 rounded-full w-48 h-48 mx-auto mb-4 flex items-center justify-center"
+                  >
+                    写真
+                  </div>
+                  <div class="text-lg font-bold">氏名氏名氏名</div>
+                  <div class="text-sm">実績実績実績実績</div>
+                  <div class="text-sm">
+                    ひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとこと
+                    ひとことひとことひとことひとことひとことひとことひとことひとことひとことひとこと
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="text-center px-3">
+                  <div
+                    class="bg-gray-200 rounded-full w-48 h-48 mx-auto mb-4 flex items-center justify-center"
+                  >
+                    写真
+                  </div>
+                  <div class="text-lg font-bold">氏名氏名氏名</div>
+                  <div class="text-sm">実績実績実績実績</div>
+                  <div class="text-sm">
+                    ひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとこと
+                    ひとことひとことひとことひとことひとことひとことひとことひとことひとことひとこと
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="text-center px-3">
+                  <div
+                    class="bg-gray-200 rounded-full w-48 h-48 mx-auto mb-4 flex items-center justify-center"
+                  >
+                    写真
+                  </div>
+                  <div class="text-lg font-bold">氏名氏名氏名</div>
+                  <div class="text-sm">実績実績実績実績</div>
+                  <div class="text-sm">
+                    ひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとこと
+                    ひとことひとことひとことひとことひとことひとことひとことひとことひとことひとこと
+                  </div>
+                </div>
+                <!-- ここに他のスライドを追加 -->
+                <div class="text-center px-3">
+                  <div
+                    class="bg-gray-200 rounded-full w-48 h-48 mx-auto mb-4 flex items-center justify-center"
+                  >
+                    写真
+                  </div>
+                  <div class="text-lg font-bold">氏名氏名氏名</div>
+                  <div class="text-sm">実績実績実績実績</div>
+                  <div class="text-sm">
+                    ひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとこと
+                    ひとことひとことひとことひとことひとことひとことひとことひとことひとことひとこと
+                  </div>
+                </div>
+                <div class="text-center px-3">
+                  <div
+                    class="bg-gray-200 rounded-full w-48 h-48 mx-auto mb-4 flex items-center justify-center"
+                  >
+                    写真
+                  </div>
+                  <div class="text-lg font-bold">氏名氏名氏名</div>
+                  <div class="text-sm">実績実績実績実績</div>
+                  <div class="text-sm">
+                    ひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとことひとこと
+                    ひとことひとことひとことひとことひとことひとことひとことひとことひとことひとこと
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-right pt-12">
+                MokuMokuの記事作成代行サービスは障害者雇用促進も行なっております。<br />
+                ライターの直接雇用も可能のため、お気軽にご相談ください。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id=""
+        class="w-full bg-gradient-to-t from-[#33CC8C] to-[#6CA7E2]"
+      >
+        <div class="w-9/12">
+          <div class="w-[95%] m-auto bg-white relative pb-36">
+            <div class="w-11/12 m-auto">
+              <h2 class="text-center font-bold text-[2.8vw] pt-24">
+                MokuMokuの記事作成代行は<br />
+                ＼<span class="text-[#F36B03] text-[3.5vw]"
+                  >安心体制で高品質な記事</span
+                >をご提供／
+              </h2>
+
+              <div class="flex gap-3 pt-12 items-start">
+                <!-- もくもくチーム -->
+                <div class="border-4 border-[#2696B0] relative w-8/12">
+                  <div
+                    class="bg-[#2696B0] text-white rounded-sm absolute top-[-15px] left-[50%] translate-x-[-50%] w-9/12 m-auto"
+                  >
+                    <p class="text-3xl px-3 py-1 w-full text-center">
+                      「もくもく」チーム
+                    </p>
+                  </div>
+
+                  <div
+                    class="flex items-start gap-4 text-[#2696B0] justify-center pt-12 pb-8"
+                  >
+                    <div class="text-3xl text-center">
+                      <p>執筆</p>
+
+                      <p
+                        id="vertical-text"
+                        class="text-white bg-[#2696B0] w-fit m-auto p-2 mt-2 rounded-md"
+                      >
+                        ライター
+                      </p>
+                    </div>
+
+                    <div class="text-center mt-16">
+                      <p>確認</p>
+                      <img src="/img/toRight.png" alt="" />
+                      <img src="/img/toLeft.png" alt="" />
+                      <p>差し戻し</p>
+                    </div>
+
+                    <div class="text-3xl text-center">
+                      <p>確認</p>
+
+                      <p
+                        id="vertical-text"
+                        class="text-white bg-[#2696B0] w-fit m-auto p-2 mt-2 rounded-md"
+                      >
+                        チェッカー
+                      </p>
+                    </div>
+
+                    <div class="text-center mt-16">
+                      <p>確認</p>
+                      <img src="/img/toRight.png" alt="" />
+                      <img src="/img/toLeft.png" alt="" />
+                      <p>差し戻し</p>
+                    </div>
+
+                    <div class="text-3xl text-center">
+                      <p>管理</p>
+
+                      <p
+                        id="vertical-text"
+                        class="text-white bg-[#2696B0] w-fit m-auto p-2 mt-2 rounded-md"
+                      >
+                        ディレクター
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="text-[#2696B0] text-center mt-28">
+                  <p>確認</p>
+                  <img src="/img/toRight.png" alt="" />
+                  <img src="/img/toLeft.png" alt="" />
+                  <p>差し戻し</p>
+                </div>
+
+                <!-- お客様 -->
+                <div class="border-4 border-[#2696B0] relative w-3/12">
+                  <div
+                    class="bg-[#2696B0] text-white rounded-sm absolute top-[-15px] left-[50%] translate-x-[-50%] w-9/12 text-center"
+                  >
+                    <p class="text-3xl px-3 py-1">お客様</p>
+                  </div>
+
+                  <div class="flex text-[#2696B0] justify-center pt-12 pb-16">
+                    <div class="text-3xl text-center">
+                      <p class="">納品</p>
+
+                      <p
+                        id="vertical-text"
+                        class="text-white bg-[#2696B0] w-fit m-auto p-2 mt-2 rounded-md"
+                      >
+                        ご担当者様
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 各役割 -->
+              <div class="flex justify-between w-full m-auto pt-16">
+                <div class="w-[30%] text-center">
+                  <p class="text-2xl">ディレクター</p>
+                  <img
+                    src="/img/director-icon.png"
+                    alt=""
+                    class="w-5/12 m-auto py-3"
+                  />
+                  <p class="text-left">
+                    チェッカーとライターを管理し、お客様自身の管理工数を最大限に抑えます。質の高い記事とお仕事で提供価値の最大化を図ります。
+                  </p>
+                </div>
+                <div class="w-[30%] text-center">
+                  <p class="text-2xl">チェッカー</p>
+                  <img
+                    src="/img/checker-icon.png"
+                    alt=""
+                    class="w-5/12 m-auto py-3"
+                  />
+                  <p class="text-left">
+                    チェッカーとライターを管理し、お客様自身の管理工数を最大限に抑えます。質の高い記事とお仕事で提供価値の最大化を図ります。
+                  </p>
+                </div>
+                <div class="w-[30%] text-center">
+                  <p class="text-2xl">ライター</p>
+                  <img
+                    src="/img/writer-icon.png"
+                    alt=""
+                    class="w-5/12 m-auto py-3"
+                  />
+                  <p class="text-left">
+                    チェッカーとライターを管理し、お客様自身の管理工数を最大限に抑えます。質の高い記事とお仕事で提供価値の最大化を図ります。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-10/12 m-auto bg-[#F36B03] rounded-xl mt-16 py-6 hover:bg-yellow-500 duration-200"
+            >
+              <a
+                href=""
+                class="text-white text-center block font-bold text-3xl"
+              >
+                記事作成代行のご相談はこちら　＞
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id=""
+        class="w-full bg-gradient-to-b from-[#33CC8C] to-[#6CA7E2]"
+      >
+        <div class="w-9/12">
+          <div class="w-[95%] m-auto bg-white relative pb-36">
+            <h2 class="text-center font-bold text-[2.8vw] pt-12">
+              無料からご依頼までの流れ
+            </h2>
+            <div class="flex justify-center items-center gap-3 pt-8">
+              <div>
+                <p class="text-center text-lg">STEP.1</p>
+                <div
+                  class="w-36 h-36 rounded-full bg-[#FFD862] flex justify-center items-center"
+                >
+                  <div>
+                    <img
+                      src="/img/flow-mail.png"
+                      alt=""
+                      class="w-auto m-auto"
+                    />
+                    <p class="text-center">お問い合わせ</p>
+                  </div>
+                </div>
+              </div>
+              <img src="/img/flow-triangle.png" alt="" class="w-4 h-4" />
+              <div>
+                <p class="text-center text-lg">STEP.2</p>
+                <div
+                  class="w-36 h-36 rounded-full bg-[#FFD862] flex justify-center items-center"
+                >
+                  <div>
+                    <img
+                      src="/img/flow-mail.png"
+                      alt=""
+                      class="w-auto m-auto"
+                    />
+                    <p class="text-center">
+                      ヒアリング<br />
+                      / 見積もり
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <img src="/img/flow-triangle.png" alt="" class="w-4 h-4" />
+              <div>
+                <p class="text-center text-lg">STEP.3</p>
+                <div
+                  class="w-36 h-36 rounded-full bg-[#FFD862] flex justify-center items-center"
+                >
+                  <div>
+                    <img
+                      src="/img/flow-mail.png"
+                      alt=""
+                      class="w-auto m-auto"
+                    />
+                    <p class="text-center">
+                      ご請求<br />
+                      / お支払い
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <img src="/img/flow-triangle.png" alt="" class="w-4 h-4" />
+              <div>
+                <p class="text-center text-lg">STEP.4</p>
+                <div
+                  class="w-36 h-36 rounded-full bg-[#FFD862] flex justify-center items-center"
+                >
+                  <div>
+                    <img
+                      src="/img/flow-mail.png"
+                      alt=""
+                      class="w-auto m-auto"
+                    />
+                    <p class="text-center">制作開始</p>
+                  </div>
+                </div>
+              </div>
+              <img src="/img/flow-triangle.png" alt="" class="w-4 h-4" />
+              <div>
+                <p class="text-center text-lg">STEP.5</p>
+                <div
+                  class="w-36 h-36 rounded-full bg-[#FFD862] flex justify-center items-center"
+                >
+                  <div>
+                    <img
+                      src="/img/flow-mail.png"
+                      alt=""
+                      class="w-auto m-auto"
+                    />
+                    <p class="text-center">ご納品</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id=""
+        class="w-full bg-gradient-to-t from-[#33CC8C] to-[#6CA7E2]"
+      >
+        <div class="w-9/12">
+          <div class="w-[95%] m-auto bg-white relative pb-36">
+            <div class="w-11/12 m-auto">
+              <h2 class="text-center font-bold text-[2.8vw] pt-20">
+                よくあるご質問
+              </h2>
+              <div class="accordion">
+                <!-- アコーディオンアイテム 1 -->
+                <div class="accordion-item pt-10">
+                  <button
+                    class="accordion-header w-full text-left py-2 px-4 font-bold text-lg font-medium focus:outline-none flex justify-between"
+                  >
+                    <p class="inline-block text-2xl">
+                      <span class="text-[#2FADCA]">Q.</span>
+                      いつ頃見積もりがもらえますか？
+                    </p>
+                    <span id="question-triangle">◀</span>
+                  </button>
+                  <div class="accordion-content p-4 bg-white">
+                    <p>
+                      <span class="text-[#F36B03]">A.</span>
+                      アコーディオン1のコンテンツです。
+                    </p>
+                  </div>
+                </div>
+                <!-- アコーディオンアイテム 2 -->
+                <div class="accordion-item pt-2">
+                  <button
+                    class="accordion-header w-full text-left py-2 px-4 font-bold text-lg font-medium focus:outline-none flex justify-between"
+                  >
+                    <p class="inline-block text-2xl">
+                      <span class="text-[#2FADCA]">Q.</span>
+                      どんなライティングでも対応可能でしょうか？
+                    </p>
+                    <span id="question-triangle">◀</span>
+                  </button>
+                  <div class="accordion-content p-4 bg-white">
+                    <p>
+                      <span class="text-[#F36B03]">A.</span>
+                      アコーディオン1のコンテンツです。
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item pt-2">
+                  <button
+                    class="accordion-header w-full text-left py-2 px-4 font-bold text-lg font-medium focus:outline-none flex justify-between"
+                  >
+                    <p class="inline-block text-2xl">
+                      <span class="text-[#2FADCA]">Q.</span>
+                      専門分野(ニッチジャンル)で記事制作できる方はいますか？
+                    </p>
+                    <span id="question-triangle">◀</span>
+                  </button>
+                  <div class="accordion-content p-4 bg-white">
+                    <p>
+                      <span class="text-[#F36B03]">A.</span>
+                      アコーディオン1のコンテンツです。
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item pt-2">
+                  <button
+                    class="accordion-header w-full text-left py-2 px-4 font-bold text-lg font-medium focus:outline-none flex justify-between"
+                  >
+                    <p class="inline-block text-2xl">
+                      <span class="text-[#2FADCA]">Q.</span>
+                      1記事からでも依頼できますか？
+                    </p>
+                    <span id="question-triangle">◀</span>
+                  </button>
+                  <div class="accordion-content p-4 bg-white">
+                    <p>
+                      <span class="text-[#F36B03]">A.</span>
+                      アコーディオン1のコンテンツです。
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item pt-2">
+                  <button
+                    class="accordion-header w-full text-left py-2 px-4 font-bold text-lg font-medium focus:outline-none flex justify-between"
+                  >
+                    <p class="inline-block text-2xl">
+                      <span class="text-[#2FADCA]">Q.</span>
+                      大量発注で安くなりますか？
+                    </p>
+                    <span id="question-triangle">◀</span>
+                  </button>
+                  <div class="accordion-content p-4 bg-white">
+                    <p>
+                      <span class="text-[#F36B03]">A.</span>
+                      アコーディオン1のコンテンツです。
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item pt-2">
+                  <button
+                    class="accordion-header w-full text-left py-2 px-4 font-bold text-lg font-medium focus:outline-none flex justify-between"
+                  >
+                    <p class="inline-block text-2xl">
+                      <span class="text-[#2FADCA]">Q.</span>
+                      最短でいつ納品されますか？
+                    </p>
+                    <span id="question-triangle">◀</span>
+                  </button>
+                  <div class="accordion-content p-4 bg-white">
+                    <p>
+                      <span class="text-[#F36B03]">A.</span>
+                      アコーディオン1のコンテンツです。
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item pt-2">
+                  <button
+                    class="accordion-header w-full text-left py-2 px-4 font-bold text-lg font-medium focus:outline-none flex justify-between"
+                  >
+                    <p class="inline-block text-2xl">
+                      <span class="text-[#2FADCA]">Q.</span>
+                      修正回数に制限はありますか？
+                    </p>
+                    <span id="question-triangle">◀</span>
+                  </button>
+                  <div class="accordion-content p-4 bg-white">
+                    <p>
+                      <span class="text-[#F36B03]">A.</span>
+                      アコーディオン1のコンテンツです。
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item pt-2">
+                  <button
+                    class="accordion-header w-full text-left py-2 px-4 font-bold text-lg font-medium focus:outline-none flex justify-between"
+                  >
+                    <p class="inline-block text-2xl">
+                      <span class="text-[#2FADCA]">Q.</span>
+                      不定期発注も大丈夫ですか？
+                    </p>
+                    <span id="question-triangle">◀</span>
+                  </button>
+                  <div class="accordion-content p-4 bg-white">
+                    <p>
+                      <span class="text-[#F36B03]">A.</span>
+                      アコーディオン1のコンテンツです。
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item pt-2">
+                  <button
+                    class="accordion-header w-full text-left py-2 px-4 font-bold text-lg font-medium focus:outline-none flex justify-between"
+                  >
+                    <p class="inline-block text-2xl">
+                      <span class="text-[#2FADCA]">Q.</span>
+                      相場観や依頼のやり方などもわからないのですが...。
+                    </p>
+                    <span id="question-triangle">◀</span>
+                  </button>
+                  <div class="accordion-content p-4 bg-white">
+                    <p>
+                      <span class="text-[#F36B03]">A.</span>
+                      アコーディオン1のコンテンツです。
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item pt-2">
+                  <button
+                    class="accordion-header w-full text-left py-2 px-4 font-bold text-lg font-medium focus:outline-none flex justify-between"
+                  >
+                    <p class="inline-block text-2xl">
+                      <span class="text-[#2FADCA]">Q.</span>
+                      割引プランはありますか？
+                    </p>
+                    <span id="question-triangle">◀</span>
+                  </button>
+                  <div class="accordion-content p-4 bg-white">
+                    <p>
+                      <span class="text-[#F36B03]">A.</span>
+                      アコーディオン1のコンテンツです。
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item pt-2">
+                  <button
+                    class="accordion-header w-full text-left py-2 px-4 font-bold text-lg font-medium focus:outline-none flex justify-between"
+                  >
+                    <p class="inline-block text-2xl">
+                      <span class="text-[#2FADCA]">Q.</span>
+                      AIライティングについて教えてください。
+                    </p>
+                    <span id="question-triangle">◀</span>
+                  </button>
+                  <div class="accordion-content p-4 bg-white">
+                    <p>
+                      <span class="text-[#F36B03]">A.</span>
+                      アコーディオン1のコンテンツです。
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item pt-2">
+                  <button
+                    class="accordion-header w-full text-left py-2 px-4 font-bold text-lg font-medium focus:outline-none flex justify-between"
+                  >
+                    <p class="inline-block text-2xl">
+                      <span class="text-[#2FADCA]">Q.</span>
+                      障がい者雇用の促進とは？
+                    </p>
+                    <span id="question-triangle">◀</span>
+                  </button>
+                  <div class="accordion-content p-4 bg-white">
+                    <p>
+                      <span class="text-[#F36B03]">A.</span>
+                      アコーディオン1のコンテンツです。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id=""
+        class="w-full bg-gradient-to-b from-[#33CC8C] to-[#6CA7E2] pb-24"
+      >
+        <div class="w-9/12">
+          <div
+            class="w-[95%] m-auto bg-white relative pb-20 rounded-bl-xl rounded-br-xl"
+          >
+            <h2 class="text-center font-bold text-[2.8vw] pt-12">
+              無料からご依頼までの流れ
+            </h2>
+          </div>
+        </div>
       </section>
     </div>
 
     <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   </body>
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const accordions = document.querySelectorAll(".accordion");
+    $(document).ready(function () {
+      $(".slider").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        prevArrow: '<button type="button" class="slick-prev">&#9664;</button>',
+        nextArrow: '<button type="button" class="slick-next">&#9654;</button>',
+      });
+    });
 
-      accordions.forEach((accordion) => {
-        accordion.addEventListener("click", () => {
-          const answer = accordion.nextElementSibling;
-          answer.classList.toggle("hidden");
-        });
+    // アコーディオン
+    document.querySelectorAll(".accordion-header").forEach((button) => {
+      button.addEventListener("click", () => {
+        const content = button.nextElementSibling;
+        const triangle = button.querySelector("#question-triangle");
+
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          triangle.classList.remove("-rotate-90");
+        } else {
+          document
+            .querySelectorAll(".accordion-content")
+            .forEach((item) => (item.style.display = "none"));
+          document
+            .querySelectorAll(".question-triangle")
+            .forEach((item) => item.classList.remove("-rotate-90"));
+          content.style.display = "block";
+          triangle.classList.add("-rotate-90");
+        }
       });
     });
   </script>
