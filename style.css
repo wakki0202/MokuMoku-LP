@@ -8,6 +8,15 @@ body {
   font-family: "Zen Maru Gothic", serif;
 }
 
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
 .carousel-item {
   display: none;
 }
@@ -74,8 +83,8 @@ body {
   );
 }
 
-#cta-btn:hover:before {
-  animation: shine 0.4s linear;
+#cta-btn:before {
+  animation: shine 2s infinite linear;
 }
 @keyframes shine {
   100% {
