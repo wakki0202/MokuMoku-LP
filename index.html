@@ -43,14 +43,19 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <header id="header" class="w-full bg-white fixed z-50">
+    <header
+      id="header"
+      class="w-full bg-white fixed z-50 top-[96%] md:top-0 md:block hidden"
+    >
       <div class="flex justify-between items-center w-7/12 m-auto py-[0.3vw]">
         <div class="flex items-center gap-[0.55vw]">
-          <img src="/img/豆塚side.png" alt="" class="w-[1.8vw]" />
+          <img src="/img/豆塚side.png" alt="" class="w-[3vw] md:w-[1.8vw]" />
           <p
-            class="text-[2.3vw] font-bold text-gray-700 leading-none flex flex-col"
+            class="text-[3vw] md:text-[2.3vw] font-bold text-gray-700 leading-none flex flex-col"
           >
-            <span class="text-[1vw] leading-none">格安記事作成なら</span>
+            <span class="text-[2vw] md:text-[1vw] leading-none"
+              >格安記事作成なら</span
+            >
             MokuMoku
           </p>
         </div>
@@ -64,19 +69,27 @@
 
           <div class="flex flex-col justify-stretch">
             <p
-              class="bg-[#2696B0] text-white text-center text-[0.75vw] rounded-t-lg py-1"
+              class="bg-[#2696B0] text-white text-center text-[1.5vw] md:text-[0.75vw] rounded-t-[0.55vw] py-[0.277vw]"
             >
               【最短5分】無料電話相談はコチラ
             </p>
             <div
-              class="flex items-start text-black bg-white border-2 border-gray-300 justify-center rounded-b-lg px-2 py-[0.2vw]"
+              class="flex items-start text-black bg-white border-[0.13vw] border-gray-300 justify-center rounded-b-[0.75vw] px-[0.55vw] py-[0.2vw]"
             >
-              <img src="/img/top-tel-icon.png" alt="" class="w-[2.3vw]" />
+              <img
+                src="/img/top-tel-icon.png"
+                alt=""
+                class="w-[4.3vw] md:w-[2.3vw]"
+              />
               <div>
-                <p class="w-fit text-[1.9vw] font-bold leading-none">
+                <p
+                  class="w-fit text-[3vw] md:text-[1.9vw] font-bold leading-none"
+                >
                   050-6883-5621
                 </p>
-                <p class="w-fit text-[0.75vw] font-bold leading-none">
+                <p
+                  class="w-fit text-[1.25vw] md:text-[0.75vw] font-bold leading-none"
+                >
                   【受付時間】10:00-19:00（月〜金）
                 </p>
               </div>
@@ -87,63 +100,122 @@
             href="
           #TOP"
             id="cta-btn"
-            class="text-white text-[1.1vw] bg-[#F36B03] py-[1.5vw] px-[0.83vw] rounded-lg hover:bg-yellow-500 duration-200"
+            class="block text-white text-[1.1vw] bg-[#F36B03] py-[1.5vw] px-[0.83vw] rounded-[0.75vw] hover:bg-yellow-500 duration-200"
             >記事作成代行の相談をする！</a
           >
         </div>
       </div>
     </header>
+    <!-- 追従フッター -->
+    <div class="md:hidden w-full fixed bottom-0 flex z-50 bg-white p-[0.3vw]">
+      <div class="flex gap-[1vw] items-center justify-between">
+        <!-- <p
+          class="text-[2.2vw] text-gray-700 font-bold flex flex-col leading-none"
+        >
+          03-1234-5678
+          <span class="text-[1vw] pt-1">受付時間 10:00-19:00(月〜金)</span>
+        </p> -->
+
+        <a
+          href="tel:050-6883-5621"
+          class="flex flex-col justify-stretch w-[49%]"
+        >
+          <p
+            class="bg-[#2696B0] text-white text-center text-[3vw] md:text-[0.75vw] rounded-t-[0.55vw] py-[0.277vw]"
+          >
+            【最短5分】無料電話相談はコチラ
+          </p>
+          <div
+            class="flex items-start text-black bg-white border-[0.13vw] border-gray-300 justify-center rounded-b-[0.75vw] px-[0.55vw] py-[0.2vw]"
+          >
+            <img
+              src="/img/top-tel-icon.png"
+              alt=""
+              class="w-[7.4vw] md:w-[2.3vw]"
+            />
+            <div>
+              <p
+                class="w-fit text-[5.4vw] md:text-[1.9vw] font-bold leading-none"
+              >
+                050-6883-5621
+              </p>
+              <p
+                class="w-fit text-[2vw] md:text-[0.75vw] font-bold leading-none"
+              >
+                【受付時間】10:00-19:00（月〜金）
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a
+          href="
+        #TOP"
+          id="cta-btn"
+          class="w-[48%] block text-white text-[4vw] bg-[#F36B03] py-[1.1vw] px-[2vw] rounded-[0.75vw] hover:bg-yellow-500 duration-200"
+          >記事作成代行の相談をする！</a
+        >
+      </div>
+    </div>
     <section
       id="TOP"
-      class="bg-gray-200 bg-[url('img/top-bg.png')] text-white bg-cover pt-12"
+      class="bg-gray-200 bg-[url('img/topbg.png')] text-white bg-cover pt-[16vw] md:pt-[3.33vw]"
     >
-      <div class="w-[91vw] m-auto flex justify-between">
-        <div class="relative w-[80.7vw]">
+      <div
+        class="w-[95vw] md:w-[91vw] m-auto flex justify-between flex-col md:flex-row"
+      >
+        <div class="relative w-full md:w-[80.7vw]">
           <!-- タイトル -->
-          <h1 class="font-bold md:text-[2.5vw] md:pt-[3.3vw]">
-            <span class="md:text-[2vw]">＼業界最安値水準／</span><br />
+          <h1 class="font-bold text-[4.8vw] md:text-[2.5vw] pt-[3.3vw]">
+            <span class="text-[5vw] md:text-[2vw]">＼業界最安値水準／</span
+            ><br />
             <span
-              class="text-[#FFD862] md:text-[5.8vw] drop-shadow-lg leading-none"
+              class="text-[#FFD862] text-[6.8vw] md:text-[5.8vw] drop-shadow-lg leading-none"
               >格安記事作成</span
-            >
-            の「MokuMoku」は、<br />
-            <span class="md:text-[1.6vw]"
+            >の「MokuMoku」は、<br />
+            <span class="text-[3vw] md:text-[1.6vw]"
               >SEO記事・取材記事・コンテンツ記事・文字起こしなど・・・
             </span>
           </h1>
 
           <!-- 3つメリット -->
           <div class="flex gap-[0.83vw] pt-[0.83vw]">
-            <div class="bg-[#2696B0] rounded-full p-[0.27vw]">
+            <div class="bg-[#2696B0] rounded-[694vw] p-[0.27vw]">
               <div
-                class="border border-white rounded-full py-[1.66vw] px-[0.83vw] text-center text-[1vw]"
+                class="border-[0.069vw] border-white rounded-[694vw] py-[4.3vw] md:py-[1.66vw] px-[2.8vw] md:px-[0.83vw] text-center text-[3.4vw] md:text-[1vw]"
               >
                 初期費用
                 <br />
-                <span class="text-[#FFD862] text-[1.3vw]"
-                  ><span class="text-[1.7vw]">0</span>円(無料)</span
+                <span class="text-[#FFD862] text-[3.5vw] md:text-[1.3vw]"
+                  ><span class="text-[5vw] md:text-[1.7vw]">0</span
+                  >円(無料)</span
                 >
               </div>
             </div>
-            <div class="bg-[#2696B0] rounded-full p-[0.27vw] text-[1.1vw]">
+            <div
+              class="bg-[#2696B0] rounded-[694vw] p-[0.27vw] md:text-[1.1vw]"
+            >
               <div
-                class="border border-white rounded-full py-[1.94vw] px-[0.83vw] text-center text-[1vw]"
+                class="border-[0.069vw] border-white rounded-[694vw] py-[5.2vw] md:py-[1.94vw] px-[0.83vw] text-center text-[3.4vw] md:text-[1vw]"
               >
                 単月更新OK!
                 <br />
-                <span class="text-[#FFD862] text-[1.2vw] leading-none"
-                  ><span class="text-[1.7vw]">1</span>ヶ月</span
+                <span
+                  class="text-[#FFD862] text-[3.5vw] md:text-[1.2vw] leading-none"
+                  ><span class="text-[5vw] md:text-[1.7vw]">1</span>ヶ月</span
                 >
               </div>
             </div>
-            <div class="bg-[#2696B0] rounded-full p-[0.27vw] text-[1.1vw]">
+            <div
+              class="bg-[#2696B0] rounded-[694vw] p-[0.27vw] md:text-[1.1vw]"
+            >
               <div
-                class="border border-white rounded-full py-[1.97vw] px-[0.55vw] text-center text-[0.95vw]"
+                class="border-[0.069vw] border-white rounded-[694vw] py-[5.5vw] md:py-[1.97vw] px-[0.55vw] text-center text-[3vw] md:text-[0.95vw]"
               >
                 お試し発注OK!
                 <br />
-                <span class="text-[#FFD862] text-[1.1vw] leading-none"
-                  ><span class="text-[1.7vw]">1</span>記事〜</span
+                <span class="text-[#FFD862] md:text-[1.1vw] leading-none"
+                  ><span class="text-[5vw] md:text-[1.7vw]">1</span>記事〜</span
                 >
               </div>
             </div>
@@ -151,78 +223,101 @@
 
           <!-- キャラクター -->
           <div class="text-center w-fit pt-[1.1vw]">
-            <p class="text-[2.08vw]">＼丸投げOK!／</p>
+            <p class="text-[4vw] md:text-[2.08vw]">＼丸投げOK!／</p>
             <img
               src="/img/top-character.png"
               alt=""
-              class="w-[14.4vw] m-auto"
+              class="w-[30vw] md:w-[12.7vw] m-auto"
             />
           </div>
 
           <!-- 誇張ポイントと電話番号 -->
-          <div class="absolute top-[43%] right-[10px]">
-            <p class="w-fit text-[3vw] leading-none drop-shadow-lg">
+          <div
+            class="absolute top-[45%] md:top-[43%] right-[1vw] md:right-[0.69vw]"
+          >
+            <p
+              class="w-fit text-[6vw] md:text-[3vw] leading-none drop-shadow-lg"
+            >
               1文字
-              <span class="text-[#FFD862] text-[6.2vw] font-bold">2.5円〜</span>
+              <span class="text-[#FFD862] text-[9vw] md:text-[6.2vw] font-bold"
+                >2.5円〜</span
+              >
             </p>
-            <p class="w-fit text-[3vw] leading-none drop-shadow-lg">
+            <p
+              class="w-fit text-[6vw] md:text-[3vw] leading-none drop-shadow-lg"
+            >
               1記事
-              <span class="text-[#FFD862] text-[6.2vw] font-bold"
+              <span class="text-[#FFD862] text-[9vw] md:text-[6.2vw] font-bold"
                 >18,000円〜</span
               >
             </p>
 
-            <div class="mt-5 flex flex-col justify-stretch">
+            <a
+              href="tel:050-6883-5621"
+              class="mt-[1.38vw] flex flex-col justify-stretch"
+            >
               <p
-                class="bg-[#2696B0] w-[85%] text-center text-[1.38vw] rounded-t-lg"
+                class="bg-[#2696B0] w-[100%] md:w-[85%] text-center text-[3.8vw] md:text-[1.38vw] rounded-t-[0.55vw]"
               >
                 【最短5分】無料電話相談はコチラ
               </p>
               <div
-                class="flex items-start text-black bg-white w-[85%] justify-center pb-[0.83vw] rounded-b-lg"
+                class="flex items-start text-black bg-white w-[100%] md:w-[85%] justify-center pb-[0.83vw] rounded-b-[0.55vw]"
               >
-                <img src="/img/top-tel-icon.png" alt="" class="w-[4.65vw]" />
+                <img
+                  src="/img/top-tel-icon.png"
+                  alt=""
+                  class="w-[7vw] md:w-[4.65vw]"
+                />
                 <div>
-                  <p class="w-fit text-[3.9vw] font-bold leading-none">
+                  <p
+                    class="w-fit text-[6vw] md:text-[3.9vw] font-bold leading-none"
+                  >
                     050-6883-5621
                   </p>
-                  <p class="w-fit text-[1.45vw] font-bold leading-none">
+                  <p
+                    class="w-fit text-[3vw] md:text-[1.45vw] font-bold leading-none"
+                  >
                     【受付時間】10:00-19:00（月〜金）
                   </p>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <!-- 丸っとプラン -->
           <div class="absolute bottom-[4.4vw] z-10">
-            <p class="text-[1.38vw]">丸っとプラン対応業務</p>
+            <p class="text-[4vw] md:text-[1.38vw]">丸っとプラン対応業務</p>
             <p
-              class="bg-gradient-to-r from-[#2EB9D9] to-[#FFD862] w-fit rounded-full py-[0.55vw] px-[1.1vw] text-[1.5vw] font-bold mt-1"
+              class="bg-gradient-to-r from-[#2EB9D9] to-[#FFD862] w-fit rounded-full py-[0.55vw] px-[1.1vw] text-[4vw] md:text-[1.5vw] font-bold mt-[0.277vw]"
             >
               KW選定 / 構成案作成 / 執筆 / 画像選定 / 校閲 / 修正 / お打ち合わせ
             </p>
           </div>
         </div>
         <div
-          class="bg-white w-[37.7vw] flex items-center justify-center text-whiteb mt-[7.4vw] mb-[5.5vw] relative z-20 border-2 border-gray-500 rounded-lg"
+          class="bg-white w-[90vw] md:w-[37.7vw] mx-auto flex items-center justify-center text-whiteb mt-[16vw] md:mt-[7.4vw] mb-[5.5vw] relative z-20 border-[0.138vw] border-gray-500 rounded-[0.55vw]"
         >
           <div class="w-11/12 m-auto relative">
             <p
-              class="absolute text-white text-center bg-[#F36B03] text-[1.38vw] px-[0.83vw] pt-[0.27vw] pb-[0.83vw] rounded-lg top-[-7vw] left-[50%] translate-x-[-50%] w-full"
+              class="absolute text-white text-center bg-[#F36B03] text-[4vw] md:text-[1.2vw] px-[0.6vw] pt-[0.27vw] pb-[0.83vw] rounded-[0.55vw] top-[-6vw] left-[50%] translate-x-[-50%] w-11/12"
             >
-              <span class="text-[0.97vw]">＼初期費用完全無料／</span><br />
+              <span class="text-[3vw] md:text-[0.85vw]"
+                >＼初期費用完全無料／</span
+              ><br />
               1記事からでもご相談いただけます
             </p>
             <form
-              class="text-black"
+              class="text-black pt-[9vw] pb-[6vw] md:py-0"
               action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfx6fcRvnuQ_HnAul8x4MX5sGVihCcMDZE-x810MALP-E-t7w/formResponse"
             >
-              <div class="flex flex-col gap-[1.1vw]">
-                <div class="border-2 border-gray-300 rounded-md p-[0.55vw]">
+              <div class="flex flex-col gap-[3vw] md:gap-[1.1vw]">
+                <div
+                  class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.55vw]"
+                >
                   <p
                     for="email"
-                    class="text-gray-600 text-[0.97vw] font-bold leading-none"
+                    class="text-gray-600 text-[3vw] md:text-[0.9vw] font-bold leading-none"
                   >
                     会社名
                   </p>
@@ -231,13 +326,15 @@
                     type="text"
                     name="entry.929835922"
                     placeholder="株式会社sample"
-                    class="rounded-xl w-full outline-none text-[1.38vw] leading-none"
+                    class="rounded-[0.83vw] w-full outline-none text-[4.5vw] md:text-[1.27vw] leading-none"
                   />
                 </div>
-                <div class="border-2 border-gray-300 rounded-md p-[0.55vw]">
+                <div
+                  class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.55vw]"
+                >
                   <p
                     for="email"
-                    class="text-gray-600 text-[0.97vw] font-bold leading-none"
+                    class="text-gray-600 text-[3vw] md:text-[0.9vw] font-bold leading-none"
                   >
                     お名前
                   </p>
@@ -246,13 +343,15 @@
                     type="text"
                     name="entry.93001158"
                     placeholder="MokuMoku太郎"
-                    class="rounded-xl w-full outline-none text-[1.38vw] leading-none"
+                    class="rounded-[0.83vw] w-full outline-none text-[4.5vw] md:text-[1.27vw] leading-none"
                   />
                 </div>
-                <div class="border-2 border-gray-300 rounded-md p-[0.55vw]">
+                <div
+                  class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.55vw]"
+                >
                   <p
                     for="email"
-                    class="text-gray-600 text-[0.97vw] font-bold leading-none"
+                    class="text-gray-600 text-[3vw] md:text-[0.9vw] font-bold leading-none"
                   >
                     メールアドレス
                   </p>
@@ -261,13 +360,15 @@
                     type="text"
                     name="entry.96562785"
                     placeholder="example@mail.co.jp"
-                    class="rounded-xl w-full outline-none text-[1.38vw] leading-none"
+                    class="rounded-[0.83vw] w-full outline-none text-[4.5vw] md:text-[1.27vw] leading-none"
                   />
                 </div>
-                <div class="border-2 border-gray-300 rounded-md p-[0.55vw]">
+                <div
+                  class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.55vw]"
+                >
                   <p
                     for="email"
-                    class="text-gray-600 text-[0.97vw] font-bold leading-none"
+                    class="text-gray-600 text-[3vw] md:text-[0.9vw] font-bold leading-none"
                   >
                     電話番号
                   </p>
@@ -276,13 +377,15 @@
                     type="text"
                     name="entry.1379716595"
                     placeholder="09000000000"
-                    class="rounded-xl w-full outline-none text-[1.38vw] leading-none"
+                    class="rounded-[0.83vw] w-full outline-none text-[4.5vw] md:text-[1.27vw] leading-none"
                   />
                 </div>
-                <div class="border-2 border-gray-300 rounded-md p-[0.55vw]">
+                <div
+                  class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.55vw]"
+                >
                   <p
                     for="msg"
-                    class="text-gray-600 text-[0.97vw] font-bold leading-none"
+                    class="text-gray-600 text-[3vw] md:text-[0.9vw] font-bold leading-none"
                   >
                     お問い合わせ内容
                   </p>
@@ -291,11 +394,11 @@
                     name="entry.52770049"
                     placeholder="①ジャンル / ②文字数 / ③記事数 / ④ご予算 / ⑤お問い合わせ詳細など"
                     rows="5"
-                    class="rounded-xl w-full outline-none text-[1.2vw] leading-none"
+                    class="rounded-[0.83vw] w-full outline-none text-[4.5vw] md:text-[1.2vw] leading-none"
                   ></textarea>
                 </div>
               </div>
-              <p class="text-[0.8vw]">
+              <p class="text-[3vw] md:text-[0.8vw]">
                 ※【相談テンプレ】①ジャンル / ②文字数 / ③記事数 / ④ご予算 /
                 ⑤お問い合わせ詳細　（コピペ利用可）
               </p>
@@ -303,7 +406,7 @@
                 type="submit"
                 name="button"
                 value="送信"
-                class="rounded-lg bg-[#F36B03] text-white w-full text-[1.1vw] py-[0.83vw] leading-none mt-[1.1vw] hover:bg-yellow-500 duration-200"
+                class="rounded-[0.55vw] bg-[#F36B03] text-white w-full text-[4.2vw] md:text-[1.1vw] py-[0.83vw] leading-none mt-[1.1vw] hover:bg-yellow-500 duration-200"
               >
                 問い合わせを送る
               </button>
@@ -315,13 +418,16 @@
 
     <!-- main-wrap -->
     <div id="main-wrap">
-      <div id="fixed-contactbox" class="fixed right-0 top-0 z-10">
+      <div
+        id="fixed-contactbox"
+        class="fixed right-0 top-0 z-10 md:block hidden"
+      >
         <div
           class="bg-white h-screen w-[25vw] pb-[0vw] flex items-center justify-center text-white relative z-20 pt-[4.2vw]"
         >
-          <div class="w-11/12 m-auto relative">
+          <div class="md:w-11/12 m-auto relative">
             <p
-              class="absolute text-white text-center bg-[#F36B03] text-[1.2vw] px-[0.27vw] pt-[0.55vw] pb-[0.83vw] rounded-lg top-[-15px] left-[50%] translate-x-[-50%] w-[99%]"
+              class="absolute text-white text-center bg-[#F36B03] text-[1.2vw] px-[0.27vw] pt-[0.55vw] pb-[0.83vw] rounded-[0.55vw] top-[-15px] left-[50%] translate-x-[-50%] w-[99%]"
             >
               <span class="text-[0.97vw]">＼初期費用完全無料／</span><br />
               1記事からでもご相談いただけます
@@ -331,7 +437,9 @@
               class="text-black pt-[5.5vw]"
             >
               <div class="flex flex-col gap-[1.3vw]">
-                <div class="border-2 border-gray-300 rounded-md p-[0.55vw]">
+                <div
+                  class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.55vw]"
+                >
                   <p for="email" class="text-gray-600 text-[0.97vw] font-bold">
                     会社名
                   </p>
@@ -340,10 +448,12 @@
                     type="text"
                     name="entry.929835922"
                     placeholder="株式会社sample"
-                    class="rounded-xl w-full outline-none text-[1.2vw]"
+                    class="rounded-[0.83vw] w-full outline-none text-[1.2vw]"
                   />
                 </div>
-                <div class="border-2 border-gray-300 rounded-md p-[0.55vw]">
+                <div
+                  class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.55vw]"
+                >
                   <p for="email" class="text-gray-600 text-[0.97vw] font-bold">
                     お名前
                   </p>
@@ -352,10 +462,12 @@
                     type="text"
                     name="entry.93001158"
                     placeholder="MokuMoku太郎"
-                    class="rounded-xl w-full outline-none text-[1.2vw]"
+                    class="rounded-[0.83vw] w-full outline-none text-[1.2vw]"
                   />
                 </div>
-                <div class="border-2 border-gray-300 rounded-md p-[0.55vw]">
+                <div
+                  class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.55vw]"
+                >
                   <p for="email" class="text-gray-600 text-[0.97vw] font-bold">
                     メールアドレス
                   </p>
@@ -364,10 +476,12 @@
                     type="text"
                     name="entry.96562785"
                     placeholder="example@mail.co.jp"
-                    class="rounded-xl w-full outline-none text-[1.2vw]"
+                    class="rounded-[0.83vw] w-full outline-none text-[1.2vw]"
                   />
                 </div>
-                <div class="border-2 border-gray-300 rounded-md p-[0.55vw]">
+                <div
+                  class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.55vw]"
+                >
                   <p for="email" class="text-gray-600 text-[0.97vw] font-bold">
                     電話番号
                   </p>
@@ -376,10 +490,12 @@
                     type="text"
                     name="entry.1379716595"
                     placeholder="09000000000"
-                    class="rounded-xl w-full outline-none text-[1.2vw]"
+                    class="rounded-[0.83vw] w-full outline-none text-[1.2vw]"
                   />
                 </div>
-                <div class="border-2 border-gray-300 rounded-md p-[0.55vw]">
+                <div
+                  class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.55vw]"
+                >
                   <p for="msg" class="text-gray-600 text-[0.97vw] font-bold">
                     お問い合わせ内容
                   </p>
@@ -388,7 +504,7 @@
                     name="entry.52770049"
                     placeholder="①ジャンル / ②文字数 / ③記事数 / ④ご予算 / ⑤お問い合わせ詳細など"
                     rows="4"
-                    class="rounded-xl w-full outline-none text-[1.2vw]"
+                    class="rounded-[0.83vw] w-full outline-none text-[1.2vw]"
                   ></textarea>
                 </div>
               </div>
@@ -400,7 +516,7 @@
                 type="submit"
                 name="button"
                 value="送信"
-                class="rounded-lg bg-[#F36B03] text-white w-full py-[1.3vw] mt-[0.83vw] text-[1.3vw] hover:bg-yellow-500 duration-200"
+                class="rounded-[0.55vw] bg-[#F36B03] text-white w-full py-[1.3vw] mt-[0.83vw] text-[1.3vw] hover:bg-yellow-500 duration-200"
               >
                 問い合わせを送る
               </button>
@@ -410,35 +526,174 @@
       </div>
       <section
         id=""
-        class="w-full h-[52vw] bg-gradient-to-b from-[#33CC8C] to-[#6CA7E2] pt-[2.2vw]"
+        class="hidden w-full bg-gradient-to-b from-[#6CA7E2] to-[#6CA7E2]"
       >
-        <div class="w-9/12">
+        <div class="w-[100%] md:w-[95%] m-auto md:m-0 md:w-9/12">
+          <div class="w-[100%] md:w-[95%] m-auto bg-white relative pb-[2.2vw]">
+            <h2 class="text-center font-bold text-[2.8vw] pt-[5.5vw]">
+              お問い合わせフォーム
+            </h2>
+
+            <div
+              class="bg-white w-7/12 m-auto pt-[2.2vw] flex items-center justify-center text-whiteb mb-[6.6vw] relative z-20 rounded-[0.55vw]"
+            >
+              <div class="w-11/12 m-auto relative">
+                <!-- <p
+                  class="absolute text-white text-center bg-[#F36B03] text-[1.66vw] px-[1.1vw] py-[1.1vw] rounded-[0.55vw] top-[-85px] left-[50%] translate-x-[-50%] w-[99%]"
+                >
+                  お問い合わせはここから！
+                </p> -->
+
+                <form
+                  class="text-black"
+                  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfx6fcRvnuQ_HnAul8x4MX5sGVihCcMDZE-x810MALP-E-t7w/formResponse"
+                >
+                  <div class="flex flex-col gap-[1.1vw]">
+                    <div
+                      class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.5vw]"
+                    >
+                      <p
+                        for="email"
+                        class="text-gray-600 text-[0.9vw] font-bold"
+                      >
+                        会社名
+                      </p>
+                      <input
+                        id="company"
+                        type="text"
+                        name="entry.929835922"
+                        placeholder="株式会社sample"
+                        class="rounded-[0.83vw] w-full outline-none text-[1.25vw]"
+                      />
+                    </div>
+                    <div
+                      class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.5vw]"
+                    >
+                      <p
+                        for="email"
+                        class="text-gray-600 text-[0.9vw] font-bold"
+                      >
+                        お名前
+                      </p>
+                      <input
+                        id="email"
+                        type="text"
+                        name="entry.93001158"
+                        placeholder="MokuMoku太郎"
+                        class="rounded-[0.83vw] w-full outline-none text-[1.25vw]"
+                      />
+                    </div>
+                    <div
+                      class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.5vw]"
+                    >
+                      <p
+                        for="email"
+                        class="text-gray-600 text-[0.9vw] font-bold"
+                      >
+                        メールアドレス
+                      </p>
+                      <input
+                        id="email"
+                        type="text"
+                        name="entry.96562785"
+                        placeholder="example@mail.co.jp"
+                        class="rounded-[0.83vw] w-full outline-none text-[1.25vw]"
+                      />
+                    </div>
+                    <div
+                      class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.5vw]"
+                    >
+                      <p
+                        for="email"
+                        class="text-gray-600 text-[0.9vw] font-bold"
+                      >
+                        電話番号
+                      </p>
+                      <input
+                        id="email"
+                        type="text"
+                        name="entry.1379716595"
+                        placeholder="09000000000"
+                        class="rounded-[0.83vw] w-full outline-none text-[1.25vw]"
+                      />
+                    </div>
+                    <div
+                      class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.5vw]"
+                    >
+                      <p for="msg" class="text-gray-600 text-[0.9vw] font-bold">
+                        お問い合わせ内容
+                      </p>
+                      <textarea
+                        id="msg"
+                        name="entry.52770049"
+                        placeholder="①ジャンル / ②文字数 / ③記事数 / ④ご予算 / ⑤お問い合わせ詳細など"
+                        rows="5"
+                        class="rounded-[0.83vw] w-full outline-none text-[1.2vw]"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <p class="text-[0.8vw]">
+                    ※【相談テンプレ】①ジャンル / ②文字数 / ③記事数 / ④ご予算
+                    /⑤お問い合わせ詳細（コピペ利用可）
+                  </p>
+                  <button
+                    type="submit"
+                    name="button"
+                    value="送信"
+                    class="rounded-[0.55vw] bg-[#F36B03] text-white w-full py-[1.2vw] mt-[1.1vw] text-[1.25vw] hover:bg-yellow-500 duration-200"
+                  >
+                    問い合わせを送る
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id=""
+        class="w-full h-[90vw] md:h-[52vw] bg-gradient-to-b from-[#6CA7E2] to-[#6CA7E2] md:pt-[2.2vw]"
+      >
+        <div class="w-[100%] m-auto md:m-0 md:w-9/12">
           <div
-            class="w-[95%] m-auto bg-white rounded-tl-xl rounded-tr-xl h-[52vw] relative"
+            class="w-[100%] md:w-[95%] m-auto bg-white md:rounded-tl-xl md:rounded-tr-xl h-[90vw] md:h-[52vw] relative"
           >
-            <h2 class="text-center font-normal text-[2.8vw] pt-[4.4vw]">
+            <h2
+              class="text-center font-normal text-[5vw] md:text-[2.8vw] pt-[4.4vw]"
+            >
               記事作成で、<br />
-              ＼こんな<span class="text-[#F36B03] text-[3.5vw]">お悩み</span
+              ＼こんな<span class="text-[#F36B03] text-[5.5vw] md:text-[3.5vw]"
+                >お悩み</span
               >ありませんか？／
             </h2>
 
             <!-- ふきだし1 -->
-            <div class="absolute bottom-[10vw] left-[6.6vw]">
+            <div
+              class="absolute bottom-[16vw] md:bottom-[10vw] left-[3vw] md:left-[6.6vw]"
+            >
               <div class="relative">
-                <img src="/img/bubble1.png" alt="" class="w-[20vw]" />
+                <img
+                  src="/img/bubble1.png"
+                  alt=""
+                  class="w-[35vw] md:w-[20vw]"
+                />
                 <p
-                  class="w-full m-auto text-center absolute z-10 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] font-bold text-[1.1vw]"
+                  class="w-full m-auto text-center absolute z-10 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] font-bold text-[2.6vw] md:text-[1.1vw]"
                 >
                   <span class="text-[#F36B03]">大量発注</span>も可能ですか？
                 </p>
               </div>
             </div>
 
-            <div class="absolute bottom-[20vw] left-[1.38vw]">
+            <div class="absolute bottom-[35vw] md:bottom-[20vw] left-[1.38vw]">
               <div class="relative">
-                <img src="/img/bubble2.png" alt="" class="w-[27vw]" />
+                <img
+                  src="/img/bubble2.png"
+                  alt=""
+                  class="w-[40vw] md:w-[27vw]"
+                />
                 <p
-                  class="w-8/12 m-auto text-center absolute z-10 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] font-bold text-[1.1vw]"
+                  class="w-8/12 m-auto text-left md:text-center absolute z-10 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] font-bold text-[2.5vw] md:text-[1.1vw]"
                 >
                   <span class="text-[#F36B03]">1記事から</span
                   >でも依頼できないかな？
@@ -446,11 +701,15 @@
               </div>
             </div>
 
-            <div class="absolute top-[16.6vw] left-[17.7vw]">
+            <div class="absolute top-[30vw] md:top-[16.6vw] left-[17.7vw]">
               <div class="relative">
-                <img src="/img/bubble3.png" alt="" class="w-[27vw]" />
+                <img
+                  src="/img/bubble3.png"
+                  alt=""
+                  class="w-[53vw] md:w-[27vw]"
+                />
                 <p
-                  class="w-full m-auto text-center absolute z-10 top-[45%] left-1/2 translate-x-[-50%] translate-y-[-50%] font-bold text-[1.1vw]"
+                  class="w-full m-auto text-center absolute z-10 top-[45%] left-1/2 translate-x-[-50%] translate-y-[-50%] font-bold text-[2.2vw] md:text-[1.1vw]"
                 >
                   外注ライターやクラウドソーシング系の<br />
                   <span class="text-[#F36B03]"
@@ -460,23 +719,33 @@
               </div>
             </div>
 
-            <div class="absolute bottom-[22.2vw] right-[2.2vw]">
+            <div
+              class="absolute bottom-[30vw] md:bottom-[22.2vw] right-[2.2vw]"
+            >
               <div class="relative">
-                <img src="/img/bubble4.png" alt="" class="w-[25vw]" />
+                <img
+                  src="/img/bubble4.png"
+                  alt=""
+                  class="w-[36vw] md:w-[25vw]"
+                />
                 <p
-                  class="w-full m-auto text-center absolute z-10 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] font-bold text-[1.1vw]"
+                  class="w-full m-auto text-center absolute z-10 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] font-bold text-[2.4vw] md:text-[1.1vw]"
                 >
                   <span class="text-[#F36B03]">なるべく安く専門家に</span
-                  >丸っと任せたい！
+                  ><br class="md:hidden" />丸っと任せたい！
                 </p>
               </div>
             </div>
 
             <div class="absolute bottom-[8.8vw] right-[1.1vw]">
               <div class="relative">
-                <img src="/img/bubble5.png" alt="" class="w-[28vw]" />
+                <img
+                  src="/img/bubble5.png"
+                  alt=""
+                  class="w-[38vw] md:w-[28vw]"
+                />
                 <p
-                  class="w-full m-auto text-center absolute z-10 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] font-bold text-[1.1vw]"
+                  class="w-full m-auto text-center absolute z-10 top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] font-bold text-[1.8vw] md:text-[1.1vw]"
                 >
                   AI記事制作もいいけど...。<br />
                   <span class="text-[#F36B03]">あえて人が書いた文章</span
@@ -488,7 +757,7 @@
             <img
               src="/img/top-character.png"
               alt=""
-              class="w-[16%] m-auto absolute left-1/2 bottom-[5.5vw] translate-x-[-50%]"
+              class="w-[20%] md:w-[16%] m-auto absolute left-1/2 bottom-[5.5vw] translate-x-[-50%]"
             />
           </div>
         </div>
@@ -497,76 +766,94 @@
       <!-- 3つのメリット -->
       <section
         id="three-merit"
-        class="w-full bg-gradient-to-t from-[#33CC8C] to-[#6CA7E2]"
+        class="w-full bg-gradient-to-t from-[#6CA7E2] to-[#6CA7E2]"
       >
-        <div class="w-9/12">
-          <div class="w-[95%] m-auto bg-white relative pt-[2.7vw]">
-            <h2 class="text-center font-bold text-[2.8vw] pt-[2.2vw]">
+        <div class="w-[100%] m-auto md:m-0 md:w-9/12">
+          <div class="w-[100%] md:w-[95%] m-auto bg-white relative pt-[2.7vw]">
+            <h2
+              class="text-center font-bold text-[5vw] md:text-[2.8vw] pt-[2.2vw]"
+            >
               ＼記事作成代行の<span class="text-[#F36B03]">3つのメリット</span
               >／
             </h2>
 
             <div
-              class="pt-[2.7vw] flex flex-wrap m-auto justify-center gap-[1.66vw]"
+              class="pt-[6vw] md:pt-[2.7vw] flex flex-col md:flex-row flex-wrap m-auto justify-center gap-[8vw] md:gap-[1.66vw] w-[95%] md:w-auto m-auto md:px-[2vw]"
             >
               <!-- メリット1 -->
               <div
-                class="bg-[#2696B0] rounded-full text-white w-[30%] aspect-square p-[0.55vw] text-md relative"
+                class="bg-[#2696B0] rounded-sm md:rounded-full text-white w-[100%] md:w-[30%] md:aspect-square p-[0.55vw] text-md relative"
               >
-                <h3 class="font-bold text-center pt-[4.4vw] text-[1.38vw]">
-                  ❶ 管理工数を削減できる
-                </h3>
-                <p class="pt-[1.1vw] px-[0.83vw] text-[0.83vw]">
-                  記事作成代行会社への外注は、担当ディレクターとのやり取り程度で済み、管理工数が大幅に削減できます。
-                  <br />
-                  外注ライターやクラウドソーシング系ライターへの依頼で価格を抑えた結果「管理工数が増えてしまって大変...。」というのを防げます。
-                </p>
-
+                <div class="w-[70%] md:w-auto">
+                  <h3
+                    class="font-bold text-center pt-[6vw] md:pt-[3.2vw] text-[3.5vw] md:text-[1.37vw]"
+                  >
+                    ❶ 管理工数を削減できる
+                  </h3>
+                  <p
+                    class="pb-[6vw] md:pb-0 pt-[2vw] md:pt-[1.1vw] px-[2vw] md:px-[0.83vw] text-[2.3vw] md:text-[0.81vw]"
+                  >
+                    記事作成代行会社への外注は、担当ディレクターとのやり取り程度で済み、管理工数が大幅に削減できます。
+                    <br />
+                    外注ライターやクラウドソーシング系ライターへの依頼で価格を抑えた結果「管理工数が増えてしまって大変...。」というのを防げます。
+                  </p>
+                </div>
                 <img
-                  src="/img/merit-character1.png"
+                  src="/img/merit-character2.png"
                   alt=""
-                  class="absolute bottom-[0.5vw] right-[7vw] w-[3.5vw]"
+                  class="absolute bottom-[0vw] md:bottom-[0vw] right-[6vw] md:right-[7vw] w-[20vw] md:w-[4.5vw]"
                 />
               </div>
 
               <!-- メリット2 -->
               <div
-                class="bg-[#2696B0] rounded-full text-white w-[30%] aspect-square p-[0.55vw] text-md relative"
+                class="bg-[#2696B0] rounded-sm md:rounded-full text-white w-[100%] md:w-[30%] ml-auto md:m-auto md:aspect-square p-[0.55vw] text-md relative"
               >
-                <h3 class="font-bold text-center pt-[4.4vw] text-[1.38vw]">
-                  ❷ 成果に繋がるような <br />
-                  高品質なコンテンツを作れる
-                </h3>
-                <p class="pt-[1.1vw] px-[0.83vw] text-[0.83vw]">
-                  各種ライティングには"コツ"が存在しています。
-                  <br />
-                  専門家が文章の法則に則ったライティングテクニックを行い、成果につながる高品質コンテンツを作り上げていきます。
-                </p>
+                <div class="w-[70%] md:w-auto ml-auto">
+                  <h3
+                    class="font-bold text-center pt-[6vw] md:pt-[3vw] text-[3.2vw] md:text-[1.38vw]"
+                  >
+                    ❷ 成果に繋がるような <br />
+                    高品質なコンテンツを作れる
+                  </h3>
+                  <p
+                    class="pb-[6vw] md:pb-0 pt-[1.1vw] px-[2vw] md:px-[0.83vw] text-[2.1vw] md:text-[0.8vw]"
+                  >
+                    各種ライティングには"コツ"が存在しています。
+                    <br />
+                    専門家が文章の法則に則ったライティングテクニックを行い、成果につながる高品質コンテンツを作り上げていきます。
+                  </p>
+                </div>
 
                 <img
-                  src="/img/merit-character2.png"
+                  src="/img/merit-character1.png"
                   alt=""
-                  class="absolute bottom-[0.5vw] left-[10.2vw] w-[4vw]"
+                  class="absolute bottom-[5vw] md:bottom-[0.5vw] left-[8vw] md:left-[10.2vw] w-[16vw] md:w-[4vw]"
                 />
               </div>
 
               <!-- メリット3 -->
               <div
-                class="bg-[#2696B0] rounded-full text-white w-[30%] aspect-square p-[0.55vw] text-md relative"
+                class="bg-[#2696B0] rounded-sm md:rounded-full text-white w-[100%] md:w-[30%] md:aspect-square p-[0.55vw] text-md relative"
               >
-                <h3 class="font-bold text-center pt-[4.4vw] text-[1.3vw]">
-                  ❸コンテンツを定量生成できる
-                </h3>
-                <p class="pt-[1.1vw] px-[0.83vw] text-[0.83vw]">
-                  外注先のおかかえライターによって、高品質コンテンツの定量生成が実現できます。
-                  <br />
-                  社内対応による、記事品質や投稿頻度のバラつきが生じるのを防げます。
-                </p>
-
+                <div class="w-[70%] md:w-auto">
+                  <h3
+                    class="font-bold text-center pt-[6vw] md:pt-[4.4vw] text-[3vw] md:text-[1.3vw]"
+                  >
+                    ❸コンテンツを定量生成できる
+                  </h3>
+                  <p
+                    class="pb-[6vw] md:pb-0 pt-[1.1vw] px-[2vw] md:px-[0.83vw] text-[2.3vw] md:text-[0.83vw]"
+                  >
+                    外注先のおかかえライターによって、高品質コンテンツの定量生成が実現できます。
+                    <br />
+                    社内対応による、記事品質や投稿頻度のバラつきが生じるのを防げます。
+                  </p>
+                </div>
                 <img
                   src="/img/merit-character3.png"
                   alt=""
-                  class="absolute bottom-[0.5vw] right-[7vw] w-[4vw]"
+                  class="absolute bottom-[2vw] md:bottom-[0.5vw] right-[6vw] md:right-[7vw] w-[14vw] md:w-[3.6vw]"
                 />
               </div>
             </div>
@@ -576,13 +863,15 @@
 
       <section
         id=""
-        class="w-full bg-gradient-to-b from-[#33CC8C] to-[#6CA7E2]"
+        class="w-full bg-gradient-to-b from-[#6CA7E2] to-[#6CA7E2]"
       >
-        <div class="w-9/12">
-          <div class="w-[95%] m-auto bg-white relative pb-[2.2vw]">
-            <h2 class="text-center font-normal text-[2.8vw] pt-[7.7vw]">
+        <div class="w-[100%] m-auto md:m-0 md:w-9/12">
+          <div class="w-[100%] md:w-[95%] m-auto bg-white relative pb-[2.2vw]">
+            <h2
+              class="text-center font-normal text-[5vw] md:text-[2.8vw] pt-[7.7vw]"
+            >
               MokuMokuの記事作成代行が<br />
-              ＼<span class="text-[#F36B03] text-[3.5vw]"
+              ＼<span class="text-[#F36B03] text-[5.5vw] md:text-[3.5vw]"
                 >選ばれる3つの理由</span
               >／
             </h2>
@@ -591,80 +880,84 @@
               class="flex justify-center gap-[1.38vw] pt-[4.4vw] px-[2.2vw] relative"
             >
               <div
-                class="border-4 border-[#2696B0] rounded-lg relative w-[30%] pt-[2.2vw] pb-[0.83vw] px-[1.66vw]"
+                class="border-[0.27vw] border-[#2696B0] rounded-[0.55vw] relative w-[33%] md:w-[30%] pt-[5vw] md:pt-[2.2vw] pb-[0.83vw] px-[1.66vw]"
               >
                 <div
-                  class="bg-[#2696B0] rounded-lg w-[80%] m-auto absolute top-[-1.73vw] left-[50%] translate-x-[-50%] py-[0.83vw]"
+                  class="bg-[#2696B0] rounded-[0.55vw] w-[90%] md:w-[80%] m-auto absolute top-[-1.73vw] left-[50%] translate-x-[-50%] py-[0.83vw]"
                 >
-                  <h3 class="text-white text-center text-[1.1vw]">
+                  <h3 class="text-white text-center text-[3vw] md:text-[1.1vw]">
                     安価高品質を実現!
                   </h3>
                 </div>
                 <img
                   src="/img/reason-icon1.png"
                   alt=""
-                  class="w-[50%] m-auto"
+                  class="w-[65%] md:w-[50%] m-auto"
                 />
-                <p class="text-[1.1vw]">
+                <p class="text-[2.6vw] md:text-[1.1vw]">
                   文字単価
-                  <span class="text-red-500 font-bold text-[1.7vw]"
+                  <span
+                    class="text-red-500 font-bold text-[3.2vw] md:text-[1.7vw]"
                     >2.5円〜</span
                   >
                 </p>
-                <p class="text-[1.1vw]">
+                <p class="text-[2.2vw] md:text-[1.1vw]">
                   記事単価
-                  <span class="text-red-500 font-bold text-[1.7vw]"
+                  <span
+                    class="text-red-500 font-bold text-[3vw] md:text-[1.7vw]"
                     >18,000円〜</span
                   >
                 </p>
 
                 <a
                   href="#set-plan"
-                  class="inline-block text-center text-[0.83vw] underline pt-[0.55vw]"
+                  class="inline-block text-center text-[1.5vw] md:text-[0.83vw] underline pt-[0.1vw] md:pt-[0.55vw]"
                   >※記事単価は「丸っとプラン」の場合。</a
                 >
               </div>
               <div
-                class="border-4 border-[#2696B0] rounded-lg relative w-[30%] pt-[2.7vw] pb-[0.83vw] px-[1.66vw]"
+                class="border-[0.27vw] border-[#2696B0] rounded-[0.55vw] relative w-[33%] md:w-[30%] pt-[6vw] md:pt-[2.7vw] pb-[0.83vw] px-[1.66vw]"
               >
                 <div
-                  class="bg-[#2696B0] rounded-lg w-[80%] m-auto absolute top-[-1.73vw] left-[50%] translate-x-[-50%] py-[0.83vw]"
+                  class="bg-[#2696B0] rounded-[0.55vw] w-[90%] md:w-[80%] m-auto absolute top-[-1.73vw] left-[50%] translate-x-[-50%] py-[0.83vw]"
                 >
-                  <h3 class="text-white text-center text-[1.1vw]">
+                  <h3 class="text-white text-center text-[3vw] md:text-[1.1vw]">
                     1記事から発注可能
                   </h3>
                 </div>
                 <img
                   src="/img/reason-icon2.png"
                   alt=""
-                  class="w-[35%] m-auto"
+                  class="w-[45%] md:w-[35%] m-auto"
                 />
-                <p class="text-center pt-[1.1vw] text-[1.1vw]">
+                <p class="text-center pt-[1.1vw] text-[2.6vw] md:text-[1.1vw]">
                   お試し発注可能
                   <br />
-                  <span class="text-red-500 font-bold text-[2.08vw]"
+                  <span
+                    class="text-red-500 font-bold text-[2.8vw] md:text-[2.08vw]"
                     >1記事〜</span
                   >
                 </p>
               </div>
               <div
-                class="border-4 border-[#2696B0] rounded-lg relative w-[30%] pt-[3.3vw] pb-[0.83vw] px-[1.66vw]"
+                class="border-[0.27vw] border-[#2696B0] rounded-[0.55vw] relative w-[33%] md:w-[30%] pt-[6vw] md:pt-[3.3vw] pb-[0.83vw] px-[1.66vw]"
               >
                 <div
-                  class="bg-[#2696B0] rounded-lg w-[80%] m-auto absolute top-[-1.73vw] left-[50%] translate-x-[-50%] py-[0.83vw]"
+                  class="bg-[#2696B0] rounded-[0.55vw] w-[90%] md:w-[80%] m-auto absolute top-[-1.73vw] left-[50%] translate-x-[-50%] py-[0.83vw]"
                 >
-                  <h3 class="text-white text-center text-[1.1vw]">
+                  <h3 class="text-white text-center text-[3vw] md:text-[1.1vw]">
                     1カ月更新OK!
                   </h3>
                 </div>
                 <img
                   src="/img/reason-icon3.png"
                   alt=""
-                  class="w-[45%] m-auto"
+                  class="w-[60%] md:w-[45%] m-auto"
                 />
-                <p class="pt-[1.38vw] text-center text-[1.1vw]">
+                <p class="pt-[1.38vw] text-center text-[2.6vw] md:text-[1.1vw]">
                   契約期間<br />
-                  <span class="text-red-500 font-bold text-[2.08vw]"
+                  <span
+                    class="text-red-500 font-bold text-[2.8vw] md:text-[2.08vw]"
                     >1カ月〜</span
                   >
                 </p>
@@ -679,187 +972,329 @@
 
             <div
               id="cta-btn"
-              class="w-10/12 m-auto bg-[#F36B03] rounded-xl mt-[5.5vw] py-[1.66vw] hover:bg-yellow-500 duration-200 shadow-[0.34vw_0.34vw_1.38vw_0.13vw_rgba(0,0,0,0.5)]"
+              class="w-11/12 md:w-10/12 m-auto bg-[#F36B03] rounded-[0.83vw] mt-[4.4vw] py-[2vw] md:py-[1.66vw] hover:bg-yellow-500 duration-200 shadow-[0.34vw_0.34vw_1.38vw_0.13vw_rgba(0,0,0,0.5)]"
             >
               <a
                 href="#TOP"
-                class="text-white text-center block font-bold text-[2.08vw]"
+                class="text-white text-center block font-bold text-[5vw] md:text-[2.08vw]"
               >
                 記事作成代行の相談をする！　＞
               </a>
             </div>
+            <!-- <div class="w-11/12 m-auto relative mt-[18vw]">
+              <p
+                class="absolute text-white text-center bg-[#F36B03] text-[4vw] md:text-[1.2vw] px-[0.6vw] pt-[0.27vw] pb-[0.83vw] rounded-[0.55vw] top-[-6vw] left-[50%] translate-x-[-50%] w-11/12"
+              >
+                <span class="text-[3vw] md:text-[0.85vw]"
+                  >＼初期費用完全無料／</span
+                ><br />
+                1記事からでもご相談いただけます
+              </p>
+              <form
+                class="text-black pt-[9vw] pb-[6vw] md:py-0"
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfx6fcRvnuQ_HnAul8x4MX5sGVihCcMDZE-x810MALP-E-t7w/formResponse"
+              >
+                <div class="flex flex-col gap-[3vw] md:gap-[1.1vw]">
+                  <div
+                    class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.55vw]"
+                  >
+                    <p
+                      for="email"
+                      class="text-gray-600 text-[3vw] md:text-[0.9vw] font-bold leading-none"
+                    >
+                      会社名
+                    </p>
+                    <input
+                      id="company"
+                      type="text"
+                      name="entry.929835922"
+                      placeholder="株式会社sample"
+                      class="rounded-[0.83vw] w-full outline-none text-[4.5vw] md:text-[1.27vw] leading-none"
+                    />
+                  </div>
+                  <div
+                    class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.55vw]"
+                  >
+                    <p
+                      for="email"
+                      class="text-gray-600 text-[3vw] md:text-[0.9vw] font-bold leading-none"
+                    >
+                      お名前
+                    </p>
+                    <input
+                      id="email"
+                      type="text"
+                      name="entry.93001158"
+                      placeholder="MokuMoku太郎"
+                      class="rounded-[0.83vw] w-full outline-none text-[4.5vw] md:text-[1.27vw] leading-none"
+                    />
+                  </div>
+                  <div
+                    class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.55vw]"
+                  >
+                    <p
+                      for="email"
+                      class="text-gray-600 text-[3vw] md:text-[0.9vw] font-bold leading-none"
+                    >
+                      メールアドレス
+                    </p>
+                    <input
+                      id="email"
+                      type="text"
+                      name="entry.96562785"
+                      placeholder="example@mail.co.jp"
+                      class="rounded-[0.83vw] w-full outline-none text-[4.5vw] md:text-[1.27vw] leading-none"
+                    />
+                  </div>
+                  <div
+                    class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.55vw]"
+                  >
+                    <p
+                      for="email"
+                      class="text-gray-600 text-[3vw] md:text-[0.9vw] font-bold leading-none"
+                    >
+                      電話番号
+                    </p>
+                    <input
+                      id="email"
+                      type="text"
+                      name="entry.1379716595"
+                      placeholder="09000000000"
+                      class="rounded-[0.83vw] w-full outline-none text-[4.5vw] md:text-[1.27vw] leading-none"
+                    />
+                  </div>
+                  <div
+                    class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.55vw]"
+                  >
+                    <p
+                      for="msg"
+                      class="text-gray-600 text-[3vw] md:text-[0.9vw] font-bold leading-none"
+                    >
+                      お問い合わせ内容
+                    </p>
+                    <textarea
+                      id="msg"
+                      name="entry.52770049"
+                      placeholder="①ジャンル / ②文字数 / ③記事数 / ④ご予算 / ⑤お問い合わせ詳細など"
+                      rows="5"
+                      class="rounded-[0.83vw] w-full outline-none text-[4.5vw] md:text-[1.2vw] leading-none"
+                    ></textarea>
+                  </div>
+                </div>
+                <p class="text-[3vw] md:text-[0.8vw]">
+                  ※【相談テンプレ】①ジャンル / ②文字数 / ③記事数 / ④ご予算 /
+                  ⑤お問い合わせ詳細　（コピペ利用可）
+                </p>
+                <button
+                  type="submit"
+                  name="button"
+                  value="送信"
+                  class="rounded-[0.55vw] bg-[#F36B03] text-white w-full text-[4.2vw] md:text-[1.1vw] py-[0.83vw] leading-none mt-[1.1vw] hover:bg-yellow-500 duration-200"
+                >
+                  問い合わせを送る
+                </button>
+              </form>
+            </div> -->
           </div>
         </div>
       </section>
 
       <section
         id=""
-        class="w-full bg-gradient-to-t from-[#33CC8C] to-[#6CA7E2]"
+        class="w-full bg-gradient-to-t from-[#6CA7E2] to-[#6CA7E2]"
       >
-        <div class="w-9/12">
-          <div class="w-[95%] m-auto bg-white relative pb-[2.2vw]">
+        <div class="w-[100%] m-auto md:m-0 md:w-9/12">
+          <div class="w-[100%] md:w-[95%] m-auto bg-white relative pb-[2.2vw]">
             <!-- オールジャンル -->
             <div>
-              <h2 class="text-center font-bold text-[2.8vw] pt-[4.4vw]">
+              <h2
+                class="text-center font-bold text-[5vw] md:text-[2.8vw] pt-[4.4vw]"
+              >
                 MokuMokuの記事作成代行は<br />
-                ＼<span class="text-[#F36B03] text-[3.5vw]"
+                ＼<span class="text-[#F36B03] text-[5.5vw] md:text-[3.5vw]"
                   >オールジャンル対応可能！</span
                 >／
               </h2>
 
-              <p class="text-center pt-[1.66vw] text-[1.1vw]">
+              <p class="text-center pt-[1.66vw] text-[2.5vw] md:text-[1.1vw]">
                 MokuMokuでは専門性の高いジャンルから流行、ニッチなジャンルまで<br />
                 幅広いジャンルに対応しています
               </p>
               <div
-                class="w-9/12 m-auto flex flex-wrap gap-x-[2.7vw] gap-y-[1.66vw] justify-center pt-[2.2vw] relative"
+                class="w-full md:w-9/12 m-auto flex flex-wrap gap-x-[2.7vw] gap-y-[1.66vw] justify-center pt-[2.2vw] relative"
               >
                 <div
-                  class="w-[18%] bg-[#FFB84E] aspect-square text-center rounded-full"
+                  class="w-[20vw] md:w-[18%] bg-[#FFB84E] aspect-square text-center rounded-full"
                 >
                   <img
                     src="/img/genre-icon1.png"
                     alt=""
-                    class="w-[35%] m-auto pt-[2.7vw]"
+                    class="w-[35%] m-auto pt-[5vw] md:pt-[2.7vw]"
                   />
-                  <p class="pt-[0.55vw] font-bold text-center text-[1.38vw]">
+                  <p
+                    class="pt-[0.55vw] font-bold text-center text-[3vw] md:text-[1.38vw]"
+                  >
                     金融
                   </p>
                 </div>
                 <div
-                  class="w-[18%] bg-[#FFD862] aspect-square text-center rounded-full"
+                  class="w-[20vw] md:w-[18%] bg-[#FFD862] aspect-square text-center rounded-full"
                 >
                   <img
                     src="/img/genre-icon2.png"
                     alt=""
-                    class="w-[35%] m-auto pt-[2.7vw]"
+                    class="w-[35%] m-auto pt-[5vw] md:pt-[2.7vw]"
                   />
-                  <p class="pt-[0.55vw] font-bold text-center text-[1.38vw]">
+                  <p
+                    class="pt-[0.55vw] font-bold text-center text-[3vw] md:text-[1.38vw]"
+                  >
                     美容
                   </p>
                 </div>
                 <div
-                  class="w-[18%] bg-[#FFB84E] aspect-square text-center rounded-full"
+                  class="w-[20vw] md:w-[18%] bg-[#FFB84E] aspect-square text-center rounded-full"
                 >
                   <img
                     src="/img/genre-icon3.png"
                     alt=""
-                    class="w-[35%] m-auto pt-[2.7vw]"
+                    class="w-[35%] m-auto pt-[5vw] md:pt-[2.7vw]"
                   />
-                  <p class="pt-[0.55vw] font-bold text-center text-[1.38vw]">
+                  <p
+                    class="pt-[0.55vw] font-bold text-center text-[3vw] md:text-[1.38vw]"
+                  >
                     健康
                   </p>
                 </div>
                 <div
-                  class="w-[18%] bg-[#FFD862] aspect-square text-center rounded-full"
+                  class="w-[20vw] md:w-[18%] bg-[#FFD862] aspect-square text-center rounded-full"
                 >
                   <img
                     src="/img/genre-icon4.png"
                     alt=""
-                    class="w-[35%] m-auto pt-[2.7vw]"
+                    class="w-[35%] m-auto pt-[5vw] md:pt-[2.7vw]"
                   />
-                  <p class="pt-[0.55vw] font-bold text-center text-[1.38vw]">
+                  <p
+                    class="pt-[0.55vw] font-bold text-center text-[3vw] md:text-[1.38vw]"
+                  >
                     不動産
                   </p>
                 </div>
                 <div
-                  class="w-[18%] bg-[#FFD862] aspect-square text-center rounded-full"
+                  class="w-[20vw] md:w-[18%] bg-[#FFD862] aspect-square text-center rounded-full"
                 >
                   <img
                     src="/img/genre-icon5.png"
                     alt=""
-                    class="w-[35%] m-auto pt-[2.7vw]"
+                    class="w-[35%] m-auto pt-[5vw] md:pt-[2.7vw]"
                   />
-                  <p class="pt-[0.27vw] font-bold text-center text-[1.38vw]">
+                  <p
+                    class="pt-[0.27vw] font-bold text-center text-[3vw] md:text-[1.38vw]"
+                  >
                     AI
                   </p>
                 </div>
                 <div
-                  class="w-[18%] bg-[#FFB84E] aspect-square text-center rounded-full"
+                  class="w-[20vw] md:w-[18%] bg-[#FFB84E] aspect-square text-center rounded-full"
                 >
                   <img
                     src="/img/genre-icon6.png"
                     alt=""
-                    class="w-[35%] m-auto pt-[2.2vw]"
+                    class="w-[35%] m-auto pt-[4.7vw] md:pt-[2.2vw]"
                   />
-                  <p class="pt-[0.55vw] font-bold text-center text-[1.1vw]">
+                  <p
+                    class="pt-[0.55vw] font-bold text-center text-[2.5vw] md:text-[1.1vw]"
+                  >
                     マーケティング
                   </p>
                 </div>
                 <div
-                  class="w-[18%] bg-[#FFD862] aspect-square text-center rounded-full"
+                  class="w-[20vw] md:w-[18%] bg-[#FFD862] aspect-square text-center rounded-full"
                 >
                   <img
                     src="/img/genre-icon7.png"
                     alt=""
-                    class="w-[35%] m-auto pt-[2.2vw]"
+                    class="w-[35%] m-auto pt-[4.7vw] md:pt-[2.2vw]"
                   />
-                  <p class="pt-[0.27vw] font-bold text-center text-[1.25vw]">
+                  <p
+                    class="pt-[0.27vw] font-bold text-center text-[2.8vw] md:text-[1.25vw]"
+                  >
                     物流
                   </p>
                 </div>
                 <div
-                  class="w-[18%] bg-[#FFB84E] aspect-square text-center rounded-full"
+                  class="w-[20vw] md:w-[18%] bg-[#FFB84E] aspect-square text-center rounded-full"
                 >
                   <img
                     src="/img/genre-icon8.png"
                     alt=""
-                    class="w-[35%] m-auto pt-[2.5vw]"
+                    class="w-[35%] m-auto pt-[4.9vw] md:pt-[2.5vw]"
                   />
-                  <p class="pt-[0.55vw] font-bold text-center text-[0.97vw]">
+                  <p
+                    class="pt-[0.55vw] font-bold text-center text-[2vw] md:text-[0.97vw]"
+                  >
                     情報セキュリティ
                   </p>
                 </div>
                 <div
-                  class="w-[18%] bg-[#FFB84E] aspect-square text-center rounded-full"
+                  class="w-[20vw] md:w-[18%] bg-[#FFB84E] aspect-square text-center rounded-full"
                 >
                   <img
                     src="/img/genre-icon9.png"
                     alt=""
-                    class="w-[35%] m-auto pt-[2.2vw]"
+                    class="w-[35%] m-auto pt-[4.7vw] md:pt-[2.2vw]"
                   />
-                  <p class="pt-[0.55vw] font-bold text-center text-[1.38vw]">
+                  <p
+                    class="pt-[0.55vw] font-bold text-center text-[3vw] md:text-[1.38vw]"
+                  >
                     法律
                   </p>
                 </div>
                 <div
-                  class="w-[18%] bg-[#FFD862] aspect-square text-center rounded-full"
+                  class="w-[20vw] md:w-[18%] bg-[#FFD862] aspect-square text-center rounded-full"
                 >
                   <img
                     src="/img/genre-icon10.png"
                     alt=""
-                    class="w-[35%] m-auto pt-[2.2vw]"
+                    class="w-[35%] m-auto pt-[4.7vw] md:pt-[2.2vw]"
                   />
-                  <p class="pt-[0.55vw] font-bold text-center text-[1.38vw]">
+                  <p
+                    class="pt-[0.55vw] font-bold text-center text-[3vw] md:text-[1.38vw]"
+                  >
                     飲食
                   </p>
                 </div>
                 <div
-                  class="w-[18%] bg-[#FFB84E] aspect-square text-center rounded-full"
+                  class="w-[20vw] md:w-[18%] bg-[#FFB84E] aspect-square text-center rounded-full"
                 >
                   <img
                     src="/img/genre-icon11.png"
                     alt=""
-                    class="w-[35%] m-auto pt-[2.2vw]"
+                    class="w-[35%] m-auto pt-[4.7vw] md:pt-[2.2vw]"
                   />
-                  <p class="pt-[0.55vw] font-bold text-center text-[1.38vw]">
+                  <p
+                    class="pt-[0.55vw] font-bold text-center text-[3vw] md:text-[1.38vw]"
+                  >
                     教育
                   </p>
                 </div>
                 <div
-                  class="w-[18%] bg-[#FFD862] aspect-square text-center rounded-full"
+                  class="w-[20vw] md:w-[18%] bg-[#FFD862] aspect-square text-center rounded-full"
                 >
                   <img
                     src="/img/genre-icon12.png"
                     alt=""
-                    class="w-[35%] m-auto pt-[2.2vw]"
+                    class="w-[35%] m-auto pt-[4.7vw] md:pt-[2.2vw]"
                   />
-                  <p class="pt-[0.55vw] font-bold text-center text-[1.38vw]">
+                  <p
+                    class="pt-[0.55vw] font-bold text-center text-[3vw] md:text-[1.38vw]"
+                  >
                     介護
                   </p>
                 </div>
 
-                <p class="absolute text-[2.08vw] bottom-0 right-[-4.86vw]">
+                <p
+                  class="absolute text-[3vw] md:text-[2.08vw] bottom-0 right-[1vw] md:right-[-4.86vw]"
+                >
                   etc...
                 </p>
               </div>
@@ -871,7 +1306,7 @@
               />
 
               <div class="relative">
-                <p class="text-center pt-[1.66vw] text-[1.66vw]">
+                <p class="text-center pt-[1.66vw] text-[3vw] md:text-[1.66vw]">
                   その他の専門分野もお気軽にご相談ください！
                 </p>
                 <img
@@ -884,65 +1319,123 @@
 
             <!-- 資格保有・記事監修 -->
             <div class="pt-[6.6vw]">
-              <h2 class="text-center text-[2.08vw] font-bold">
+              <h2 class="text-center text-[4vw] md:text-[2.08vw] font-bold">
                 資格保有者・記事監修も外注できます！
               </h2>
 
-              <p class="text-center pt-[2.2vw] text-[1.1vw]">
+              <p class="text-center pt-[2.2vw] text-[3vw] md:text-[1.1vw]">
                 MokuMokuでは<span class="text-[#F36B03]"
                   >幅広いジャンルの記事監修の依頼が可能です</span
                 >
               </p>
 
               <div
-                class="w-9/12 m-auto flex flex-wrap justify-center gap-[3.3vw] pt-[3.3vw] relative"
+                class="w-10/12 md:w-9/12 m-auto flex flex-wrap justify-center gap-[3.3vw] pt-[3.3vw] relative"
               >
                 <div
                   class="w-5/12 bg-[#FFD862] flex justify-center items-center gap-[1.38vw] py-[0.83vw] px-[0.27vw] rounded-sm"
                 >
                   <img src="/img/law.png" alt="" class="w-[35%]" />
-                  <p class="text-[1.66vw]">弁護士資格</p>
+                  <p class="text-[3vw] md:text-[1.66vw]">弁護士資格</p>
                 </div>
                 <div
                   class="w-5/12 bg-[#FFD862] flex justify-center items-center gap-[1.66vw] py-[0.83vw] px-[0.27vw] rounded-sm"
                 >
                   <img src="/img/fp.png" alt="" class="w-[30%]" />
-                  <p class="text-[1.66vw]">FP資格</p>
+                  <p class="text-[3vw] md:text-[1.66vw]">FP資格</p>
                 </div>
                 <div
                   class="w-5/12 bg-[#FFD862] flex justify-center items-center gap-[1.38vw] py-[0.83vw] px-[0.27vw] rounded-sm"
                 >
                   <img src="/img/medical.png" alt="" class="w-[35%]" />
-                  <p class="text-[1.25vw]">薬機法管理者資格</p>
+                  <p class="text-[2.6vw] md:text-[1.25vw]">薬機法管理者資格</p>
                 </div>
                 <div
                   class="w-5/12 bg-[#FFD862] flex justify-center items-center gap-[1.38vw] py-[0.83vw] px-[0.27vw] rounded-sm"
                 >
-                  <img src="/img/home.png" alt="" class="w-[35%]" />
-                  <p class="text-[1.25vw]">宅地建物取引士資格</p>
+                  <img src="/img/home.png" alt="" class="w-[33%] md:w-[35%]" />
+                  <p class="text-[2.2vw] md:text-[1.25vw]">
+                    宅地建物取引士資格
+                  </p>
                 </div>
 
-                <p class="absolute text-[2.08vw] bottom-0 right-[-3.47vw]">
+                <p
+                  class="absolute text-[3vw] md:text-[2.08vw] bottom-0 right-[-3.47vw]"
+                >
                   etc...
                 </p>
               </div>
 
               <p
-                class="text-center rounded-full py-[0.27vw] px-[5.5vw] text-[1.38vw] bg-gradient-to-r from-[#2EB9D9] to-[#FFD862] w-fit text-white m-auto mt-[3.3vw]"
+                class="text-center rounded-full py-[0.27vw] px-[5.5vw] text-[3.2vw] md:text-[1.38vw] bg-gradient-to-r from-[#2EB9D9] to-[#FFD862] w-fit text-white m-auto mt-[3.3vw]"
               >
                 記名記事 / 顔出し記事 / 実績記載 / 経歴記載 / 資格記載
               </p>
 
               <div
                 id="cta-btn"
-                class="w-10/12 m-auto bg-[#F36B03] rounded-xl mt-[4.4vw] py-[1.66vw] hover:bg-yellow-500 duration-200 shadow-[0.34vw_0.34vw_1.38vw_0.13vw_rgba(0,0,0,0.5)]"
+                class="hidden md:block w-11/12 md:w-10/12 m-auto bg-[#F36B03] rounded-[0.83vw] mt-[4.4vw] py-[2vw] md:py-[1.66vw] hover:bg-yellow-500 duration-200 shadow-[0.34vw_0.34vw_1.38vw_0.13vw_rgba(0,0,0,0.5)]"
               >
                 <a
                   href="#TOP"
-                  class="text-white text-center block font-bold text-[2.08vw]"
+                  class="text-white text-center block font-bold text-[5vw] md:text-[2.08vw]"
                 >
                   記事作成代行の相談をする！　＞
                 </a>
+              </div>
+              <div
+                class="md:hidden w-full flex justify-center bg-white p-[0.3vw] pt-[6vw]"
+              >
+                <div
+                  class="flex flex-col gap-[6vw] items-center justify-center"
+                >
+                  <!-- <p
+                    class="text-[2.2vw] text-gray-700 font-bold flex flex-col leading-none"
+                  >
+                    03-1234-5678
+                    <span class="text-[1vw] pt-1">受付時間 10:00-19:00(月〜金)</span>
+                  </p> -->
+
+                  <a
+                    href="tel:050-6883-5621"
+                    class="flex flex-col justify-stretch w-[100%] shadow-[0.34vw_0.34vw_1.38vw_0.13vw_rgba(0,0,0,0.5)]"
+                  >
+                    <p
+                      class="bg-[#2696B0] text-white text-center text-[5.5vw] md:text-[0.75vw] rounded-t-[0.55vw] py-[0.277vw]"
+                    >
+                      【最短5分】無料電話相談はコチラ
+                    </p>
+                    <div
+                      class="flex items-start text-black bg-white border-[0.13vw] border-gray-300 justify-center rounded-b-[0.75vw] px-[0.55vw] py-[0.2vw]"
+                    >
+                      <img
+                        src="/img/top-tel-icon.png"
+                        alt=""
+                        class="w-[10vw] md:w-[2.3vw]"
+                      />
+                      <div>
+                        <p
+                          class="w-fit text-[8vw] md:text-[1.9vw] font-bold leading-none"
+                        >
+                          050-6883-5621
+                        </p>
+                        <p
+                          class="w-fit text-[3.5vw] md:text-[0.75vw] font-bold leading-none"
+                        >
+                          【受付時間】10:00-19:00（月〜金）
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a
+                    href="
+                  #TOP"
+                    id="cta-btn"
+                    class="w-[100%] block text-white text-center text-[6vw] bg-[#F36B03] py-[5.1vw] font-bold px-[2vw] rounded-[0.75vw] hover:bg-yellow-500 duration-200 shadow-[0.34vw_0.34vw_1.38vw_0.13vw_rgba(0,0,0,0.5)]"
+                    >記事作成代行の相談をする！</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -952,31 +1445,37 @@
       <!-- 料金表 -->
       <section
         id=""
-        class="w-full bg-gradient-to-b from-[#33CC8C] to-[#6CA7E2]"
+        class="w-full bg-gradient-to-b from-[#6CA7E2] to-[#6CA7E2]"
       >
-        <div class="w-9/12">
-          <div class="w-[95%] m-auto bg-white relative pb-[2.2vw]">
-            <h2 class="text-center font-normal text-[2.8vw] pt-[5.5vw]">
+        <div class="w-[100%] m-auto md:m-0 md:w-9/12">
+          <div class="w-[100%] md:w-[95%] m-auto bg-white relative pb-[2.2vw]">
+            <h2
+              class="text-center font-normal text-[5vw] md:text-[2.8vw] pt-[5.5vw]"
+            >
               記事作成代行の料金表
             </h2>
 
-            <h3 class="text-center pt-[1.66vw] text-[2vw]">切り分けプラン</h3>
+            <h3 class="text-center pt-[1.66vw] text-[4vw] md:text-[2vw]">
+              切り分けプラン
+            </h3>
             <div
               class="flex flex-wrap justify-center gap-[2.2vw] gap-y-[2.2vw] pt-[2.7vw] px-[2.2vw] relative"
             >
               <div
-                class="border-4 border-[#2696B0] rounded-lg relative w-[30%] pt-[1.1vw] pb-[0.83vw] px-[1.1vw]"
+                class="border-[0.27vw] border-[#2696B0] rounded-[0.55vw] relative w-[30%] pt-[1.1vw] pb-[0.83vw] px-[1.1vw]"
               >
                 <div
-                  class="bg-[#2696B0] rounded-full w-[3vw] h-[3vw] m-auto absolute top-[-1.73vw] left-[-0.34vw] translate-x-[-50%] p-[0.55vw]"
+                  class="bg-[#2696B0] rounded-full w-[6vw] h-[6vw] md:w-[3vw] md:h-[3vw] m-auto absolute top-[-1.73vw] left-[-0.34vw] translate-x-[-50%] p-[0.55vw]"
                 >
                   <p
-                    class="text-white text-center text-[1.66vw] leading-[1.7vw]"
+                    class="text-white text-center text-[3.5vw] md:text-[1.66vw] leading-[4vw] md:leading-[1.7vw]"
                   >
                     1
                   </p>
                 </div>
-                <h3 class="text-center text-[#2696B0] text-[1.66vw] font-bold">
+                <h3
+                  class="text-center text-[#2696B0] text-[3vw] md:text-[1.66vw] font-bold"
+                >
                   キーワード選定
                 </h3>
                 <img
@@ -985,7 +1484,9 @@
                   class="w-[30%] m-auto py-[0.55vw]"
                 />
                 <div class="relative">
-                  <p class="text-center text-[#2696B0] text-[1.38vw]">
+                  <p
+                    class="text-center text-[#2696B0] text-[2.8vw] md:text-[1.38vw]"
+                  >
                     都度見積もり
                   </p>
                 </div>
@@ -995,7 +1496,7 @@
                   >
                     <span
                       id="accordion-open-btn"
-                      class="text-[1.1vw] font-bold absolute top-[-12.2vw] right-[-1vw] w-[20vw] h-[15vw]"
+                      class="text-[3vw] md:text-[1.1vw] font-bold absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
                     >
                       <span class="relative bottom-[-10.4vw] left-[17vw]"
                         >＋</span
@@ -1003,14 +1504,14 @@
                     >
                     <span
                       id="accordion-close-btn"
-                      class="text-[1.1vw] font-bold hidden absolute absolute top-[-12.2vw] right-[-1vw] w-[20vw] h-[15vw]"
+                      class="text-[3vw] md:text-[1.1vw] font-bold hidden absolute absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
                       ><span class="relative bottom-[-10.4vw] left-[17vw]"
                         >ー</span
                       ></span
                     >
                   </button>
                   <div class="accordion-content hidden">
-                    <p class="text-[0.83vw] pt-[0.27vw]">
+                    <p class="text-[2vw] md:text-[0.83vw] pt-[0.27vw]">
                       SEOを意識したキーワード選定を行います。自社分析や競合分析を行い、狙いたいキーワードでの上位表示を目指します。SEOを意識しないライティングでも軸となるキーワードを選定するなどのサポートが可能です。
                     </p>
                   </div>
@@ -1018,18 +1519,20 @@
               </div>
 
               <div
-                class="border-4 border-[#2696B0] rounded-lg relative w-[30%] pt-[1.1vw] pb-[0.83vw] px-[1.1vw]"
+                class="border-[0.27vw] border-[#2696B0] rounded-[0.55vw] relative w-[30%] pt-[1.1vw] pb-[0.83vw] px-[1.1vw]"
               >
                 <div
-                  class="bg-[#2696B0] rounded-full w-[3vw] h-[3vw] m-auto absolute top-[-1.73vw] left-[-0.34vw] translate-x-[-50%] p-[0.55vw]"
+                  class="bg-[#2696B0] rounded-full w-[6vw] h-[6vw] md:w-[3vw] md:h-[3vw] m-auto absolute top-[-1.73vw] left-[-0.34vw] translate-x-[-50%] p-[0.55vw]"
                 >
                   <p
-                    class="text-white text-center text-[1.66vw] leading-[1.7vw]"
+                    class="text-white text-center text-[3.5vw] md:text-[1.66vw] leading-[4vw] md:leading-[1.7vw]"
                   >
                     2
                   </p>
                 </div>
-                <h3 class="text-center text-[#2696B0] text-[1.66vw] font-bold">
+                <h3
+                  class="text-center text-[#2696B0] text-[3vw] md:text-[1.66vw] font-bold"
+                >
                   構成案作成
                 </h3>
                 <img
@@ -1037,7 +1540,9 @@
                   alt=""
                   class="w-[24%] m-auto py-[0.55vw]"
                 />
-                <p class="text-center text-[#2696B0] text-[1.38vw]">
+                <p
+                  class="text-center text-[#2696B0] text-[2.8vw] md:text-[1.38vw]"
+                >
                   +3円/1文字〜
                 </p>
                 <div class="flex flex-row-reverse items-start gap-[0.27vw]">
@@ -1046,7 +1551,7 @@
                   >
                     <span
                       id="accordion-open-btn"
-                      class="text-[1.1vw] font-bold absolute top-[-12.2vw] right-[-1vw] w-[20vw] h-[15vw]"
+                      class="text-[3vw] md:text-[1.1vw] font-bold absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
                     >
                       <span class="relative bottom-[-10.4vw] left-[17vw]"
                         >＋</span
@@ -1054,32 +1559,34 @@
                     >
                     <span
                       id="accordion-close-btn"
-                      class="text-[1.1vw] font-bold hidden absolute absolute top-[-12.2vw] right-[-1vw] w-[20vw] h-[15vw]"
+                      class="text-[3vw] md:text-[1.1vw] font-bold hidden absolute absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
                       ><span class="relative bottom-[-10.4vw] left-[17vw]"
                         >ー</span
                       ></span
                     >
                   </button>
                   <div class="accordion-content hidden">
-                    <p class="text-[0.83vw] pt-[0.27vw]">
+                    <p class="text-[2vw] md:text-[0.83vw] pt-[0.27vw]">
                       SEOを意識した構成案を作成いたします。構成案は見出しだけではなく、記事内容の方向性や参考文献の情報も記載いたします。その後の記事執筆でイメージの相違なく高品質な記事が作成できます。
                     </p>
                   </div>
                 </div>
               </div>
               <div
-                class="border-4 border-[#2696B0] rounded-lg relative w-[30%] pt-[1.1vw] pb-[0.83vw] px-[1.1vw]"
+                class="border-[0.27vw] border-[#2696B0] rounded-[0.55vw] relative w-[30%] pt-[1.1vw] pb-[0.83vw] px-[1.1vw]"
               >
                 <div
-                  class="bg-[#2696B0] rounded-full w-[3vw] h-[3vw] m-auto absolute top-[-1.73vw] left-[-0.34vw] translate-x-[-50%] p-[0.55vw]"
+                  class="bg-[#2696B0] rounded-full w-[6vw] h-[6vw] md:w-[3vw] md:h-[3vw] m-auto absolute top-[-1.73vw] left-[-0.34vw] translate-x-[-50%] p-[0.55vw]"
                 >
                   <p
-                    class="text-white text-center text-[1.66vw] leading-[1.7vw]"
+                    class="text-white text-center text-[3.5vw] md:text-[1.66vw] leading-[4vw] md:leading-[1.7vw]"
                   >
                     3
                   </p>
                 </div>
-                <h3 class="text-center text-[#2696B0] text-[1.66vw] font-bold">
+                <h3
+                  class="text-center text-[#2696B0] text-[3vw] md:text-[1.66vw] font-bold"
+                >
                   ライティング
                 </h3>
                 <img
@@ -1087,7 +1594,9 @@
                   alt=""
                   class="w-[33%] m-auto py-[0.83vw]"
                 />
-                <p class="text-center text-[#2696B0] text-[1.38vw]">
+                <p
+                  class="text-center text-[#2696B0] text-[2.8vw] md:text-[1.38vw]"
+                >
                   +2.5円/1文字〜
                 </p>
                 <div class="flex flex-row-reverse items-start gap-[0.27vw]">
@@ -1096,7 +1605,7 @@
                   >
                     <span
                       id="accordion-open-btn"
-                      class="text-[1.1vw] font-bold absolute top-[-12.2vw] right-[-1vw] w-[20vw] h-[15vw]"
+                      class="text-[3vw] md:text-[1.1vw] font-bold absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
                     >
                       <span class="relative bottom-[-10.4vw] left-[17vw]"
                         >＋</span
@@ -1104,32 +1613,34 @@
                     >
                     <span
                       id="accordion-close-btn"
-                      class="text-[1.1vw] font-bold hidden absolute absolute top-[-12.2vw] right-[-1vw] w-[20vw] h-[15vw]"
+                      class="text-[3vw] md:text-[1.1vw] font-bold hidden absolute absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
                       ><span class="relative bottom-[-10.4vw] left-[17vw]"
                         >ー</span
                       ></span
                     >
                   </button>
                   <div class="accordion-content hidden">
-                    <p class="text-[0.83vw] pt-[0.27vw]">
+                    <p class="text-[2vw] md:text-[0.83vw] pt-[0.27vw]">
                       SEOライティング・取材記事・文字起こし。コンテンツ記事など、幅広いライティングに対応しております。<br />記載以外のライティングについてもお気軽にご相談ください。
                     </p>
                   </div>
                 </div>
               </div>
               <div
-                class="border-4 border-[#2696B0] rounded-lg relative w-[30%] pt-[1.1vw] pb-[0.83vw] px-[1.1vw]"
+                class="border-[0.27vw] border-[#2696B0] rounded-[0.55vw] relative w-[30%] pt-[1.1vw] pb-[0.83vw] px-[1.1vw]"
               >
                 <div
-                  class="bg-[#2696B0] rounded-full w-[3vw] h-[3vw] m-auto absolute top-[-1.73vw] left-[-0.34vw] translate-x-[-50%] p-[0.55vw]"
+                  class="bg-[#2696B0] rounded-full w-[6vw] h-[6vw] md:w-[3vw] md:h-[3vw] m-auto absolute top-[-1.73vw] left-[-0.34vw] translate-x-[-50%] p-[0.55vw]"
                 >
                   <p
-                    class="text-white text-center text-[1.66vw] leading-[1.7vw]"
+                    class="text-white text-center text-[3.5vw] md:text-[1.66vw] leading-[4vw] md:leading-[1.7vw]"
                   >
                     4
                   </p>
                 </div>
-                <h3 class="text-center text-[#2696B0] text-[1.66vw] font-bold">
+                <h3
+                  class="text-center text-[#2696B0] text-[3vw] md:text-[1.66vw] font-bold"
+                >
                   校閲
                 </h3>
                 <img
@@ -1137,10 +1648,14 @@
                   alt=""
                   class="w-[30%] m-auto py-[0.55vw]"
                 />
-                <p class="text-center text-[#2696B0] text-[1.1vw]">
+                <p
+                  class="text-center text-[#2696B0] text-[2vw] md:text-[1.1vw]"
+                >
                   一般分野 +2円/1文字〜
                 </p>
-                <p class="text-center text-[#2696B0] text-[1.1vw]">
+                <p
+                  class="text-center text-[#2696B0] text-[2vw] md:text-[1.1vw]"
+                >
                   専門分野 +4円/1文字〜
                 </p>
 
@@ -1150,7 +1665,7 @@
                   >
                     <span
                       id="accordion-open-btn"
-                      class="text-[1.1vw] font-bold absolute top-[-12.2vw] right-[-1vw] w-[20vw] h-[15vw]"
+                      class="text-[3vw] md:text-[1.1vw] font-bold absolute top-[-15vw] right-[-1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
                     >
                       <span class="relative bottom-[-10.4vw] left-[17vw]"
                         >＋</span
@@ -1158,14 +1673,14 @@
                     >
                     <span
                       id="accordion-close-btn"
-                      class="text-[1.1vw] font-bold hidden absolute absolute top-[-12.2vw] right-[-1vw] w-[20vw] h-[15vw]"
+                      class="text-[3vw] md:text-[1.1vw] font-bold hidden absolute absolute top-[-15vw] right-[-1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
                       ><span class="relative bottom-[-10.4vw] left-[17vw]"
                         >ー</span
                       ></span
                     >
                   </button>
                   <div class="accordion-content hidden">
-                    <p class="text-[0.83vw] pt-[0.27vw]">
+                    <p class="text-[2vw] md:text-[0.83vw] pt-[0.27vw]">
                       文章内容を校閲担当者がチェックします。第三者によるチェックにより、読者目線で見たときに行動を起こしやすい内容に調整いたします。<br />
                       社内チェックの工数削減にもつながります。
                     </p>
@@ -1173,18 +1688,20 @@
                 </div>
               </div>
               <div
-                class="border-4 border-[#2696B0] rounded-lg relative w-[30%] pt-[1.1vw] pb-[0.83vw] px-[1.1vw]"
+                class="border-[0.27vw] border-[#2696B0] rounded-[0.55vw] relative w-[30%] pt-[1.1vw] pb-[0.83vw] px-[1.1vw]"
               >
                 <div
-                  class="bg-[#2696B0] rounded-full w-[3vw] h-[3vw] m-auto absolute top-[-1.73vw] left-[-0.34vw] translate-x-[-50%] p-[0.55vw]"
+                  class="bg-[#2696B0] rounded-full w-[6vw] h-[6vw] md:w-[3vw] md:h-[3vw] m-auto absolute top-[-1.73vw] left-[-0.34vw] translate-x-[-50%] p-[0.55vw]"
                 >
                   <p
-                    class="text-white text-center text-[1.66vw] leading-[1.7vw]"
+                    class="text-white text-center text-[3.5vw] md:text-[1.66vw] leading-[4vw] md:leading-[1.7vw]"
                   >
                     5
                   </p>
                 </div>
-                <h3 class="text-center text-[#2696B0] text-[1.66vw] font-bold">
+                <h3
+                  class="text-center text-[#2696B0] text-[3vw] md:text-[1.66vw] font-bold"
+                >
                   画像選定
                 </h3>
                 <img
@@ -1192,7 +1709,9 @@
                   alt=""
                   class="w-[40%] m-auto py-[0.83vw]"
                 />
-                <p class="text-center text-[#2696B0] text-[1.38vw]">
+                <p
+                  class="text-center text-[#2696B0] text-[2.8vw] md:text-[1.38vw]"
+                >
                   +2円/1文字〜
                 </p>
 
@@ -1202,7 +1721,7 @@
                   >
                     <span
                       id="accordion-open-btn"
-                      class="text-[1.1vw] font-bold absolute top-[-12.2vw] right-[-1vw] w-[20vw] h-[15vw]"
+                      class="text-[3vw] md:text-[1.1vw] font-bold absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
                     >
                       <span class="relative bottom-[-10.4vw] left-[17vw]"
                         >＋</span
@@ -1210,32 +1729,34 @@
                     >
                     <span
                       id="accordion-close-btn"
-                      class="text-[1.1vw] font-bold hidden absolute absolute top-[-12.2vw] right-[-1vw] w-[20vw] h-[15vw]"
+                      class="text-[3vw] md:text-[1.1vw] font-bold hidden absolute absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
                       ><span class="relative bottom-[-10.4vw] left-[17vw]"
                         >ー</span
                       ></span
                     >
                   </button>
                   <div class="accordion-content hidden">
-                    <p class="text-[0.83vw] pt-[0.27vw]">
+                    <p class="text-[2vw] md:text-[0.83vw] pt-[0.27vw]">
                       文章を表現するのに最適な画像を選定いたします。テキストだけではなく画像を用いたライティングにより記事全体のクオリティを向上させ、成果実現に繋げます。
                     </p>
                   </div>
                 </div>
               </div>
               <div
-                class="border-4 border-[#2696B0] rounded-lg relative w-[30%] pt-[1.1vw] pb-[0.83vw] px-[1.1vw]"
+                class="border-[0.27vw] border-[#2696B0] rounded-[0.55vw] relative w-[30%] pt-[1.1vw] pb-[0.83vw] px-[1.1vw]"
               >
                 <div
-                  class="bg-[#2696B0] rounded-full w-[3vw] h-[3vw] m-auto absolute top-[-1.73vw] left-[-0.34vw] translate-x-[-50%] p-[0.55vw]"
+                  class="bg-[#2696B0] rounded-full w-[6vw] h-[6vw] md:w-[3vw] md:h-[3vw] m-auto absolute top-[-1.73vw] left-[-0.34vw] translate-x-[-50%] p-[0.55vw]"
                 >
                   <p
-                    class="text-white text-center text-[1.66vw] leading-[1.7vw]"
+                    class="text-white text-center text-[3.5vw] md:text-[1.66vw] leading-[4vw] md:leading-[1.7vw]"
                   >
                     6
                   </p>
                 </div>
-                <h3 class="text-center text-[#2696B0] text-[1.66vw] font-bold">
+                <h3
+                  class="text-center text-[#2696B0] text-[3vw] md:text-[1.66vw] font-bold"
+                >
                   専門ライター
                 </h3>
                 <img
@@ -1243,7 +1764,9 @@
                   alt=""
                   class="w-[30%] m-auto py-[0.55vw]"
                 />
-                <p class="text-center text-[#2696B0] text-[1.38vw]">
+                <p
+                  class="text-center text-[#2696B0] text-[2.8vw] md:text-[1.38vw]"
+                >
                   +3円/1文字〜
                 </p>
 
@@ -1253,7 +1776,7 @@
                   >
                     <span
                       id="accordion-open-btn"
-                      class="text-[1.1vw] font-bold absolute top-[-12.2vw] right-[-1vw] w-[20vw] h-[15vw]"
+                      class="text-[3vw] md:text-[1.1vw] font-bold absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
                     >
                       <span class="relative bottom-[-10.4vw] left-[17vw]"
                         >＋</span
@@ -1261,32 +1784,34 @@
                     >
                     <span
                       id="accordion-close-btn"
-                      class="text-[1.1vw] font-bold hidden absolute absolute top-[-12.2vw] right-[-1vw] w-[20vw] h-[15vw]"
+                      class="text-[3vw] md:text-[1.1vw] font-bold hidden absolute absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
                       ><span class="relative bottom-[-10.4vw] left-[17vw]"
                         >ー</span
                       ></span
                     >
                   </button>
                   <div class="accordion-content hidden">
-                    <p class="text-[0.83vw] pt-[0.27vw]">
+                    <p class="text-[2vw] md:text-[0.83vw] pt-[0.27vw]">
                       各分野の専門ライターが執筆いたします。資格保有者や特定の条件を満たすライターへの執筆依頼もお気軽にご相談ください。
                     </p>
                   </div>
                 </div>
               </div>
               <div
-                class="border-4 border-[#2696B0] rounded-lg relative w-[30%] pt-[1.1vw] pb-[0.83vw] px-[1.1vw]"
+                class="border-[0.27vw] border-[#2696B0] rounded-[0.55vw] relative w-[30%] pt-[1.1vw] pb-[0.83vw] px-[1.1vw]"
               >
                 <div
-                  class="bg-[#2696B0] rounded-full w-[3vw] h-[3vw] m-auto absolute top-[-1.73vw] left-[-0.34vw] translate-x-[-50%] p-[0.55vw]"
+                  class="bg-[#2696B0] rounded-full w-[6vw] h-[6vw] md:w-[3vw] md:h-[3vw] m-auto absolute top-[-1.73vw] left-[-0.34vw] translate-x-[-50%] p-[0.55vw]"
                 >
                   <p
-                    class="text-white text-center text-[1.66vw] leading-[1.7vw]"
+                    class="text-white text-center text-[3.5vw] md:text-[1.66vw] leading-[4vw] md:leading-[1.7vw]"
                   >
                     7
                   </p>
                 </div>
-                <h3 class="text-center text-[#2696B0] text-[1.66vw] font-bold">
+                <h3
+                  class="text-center text-[#2696B0] text-[3vw] md:text-[1.66vw] font-bold"
+                >
                   インタビュー
                 </h3>
                 <img
@@ -1294,7 +1819,9 @@
                   alt=""
                   class="w-[35%] m-auto py-[0.83vw]"
                 />
-                <p class="text-center text-[#2696B0] text-[1.38vw]">
+                <p
+                  class="text-center text-[#2696B0] text-[2.8vw] md:text-[1.38vw]"
+                >
                   都度見積もり
                 </p>
 
@@ -1304,7 +1831,7 @@
                   >
                     <span
                       id="accordion-open-btn"
-                      class="text-[1.1vw] font-bold absolute top-[-12.2vw] right-[-1vw] w-[20vw] h-[15vw]"
+                      class="text-[3vw] md:text-[1.1vw] font-bold absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
                     >
                       <span class="relative bottom-[-10.4vw] left-[17vw]"
                         >＋</span
@@ -1312,32 +1839,34 @@
                     >
                     <span
                       id="accordion-close-btn"
-                      class="text-[1.1vw] font-bold hidden absolute absolute top-[-12.2vw] right-[-1vw] w-[20vw] h-[15vw]"
+                      class="text-[3vw] md:text-[1.1vw] font-bold hidden absolute absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
                       ><span class="relative bottom-[-10.4vw] left-[17vw]"
                         >ー</span
                       ></span
                     >
                   </button>
                   <div class="accordion-content hidden">
-                    <p class="text-[0.83vw] pt-[0.27vw]">
+                    <p class="text-[2vw] md:text-[0.83vw] pt-[0.27vw]">
                       インタビューの実施も可能です。インタビュー構成の作成やインタビュアーの御用などもご相談いただけます。また、採用のための社内インタビューなども対応可能です。インタビューはオンラインでもオフラインでも対応可能です。
                     </p>
                   </div>
                 </div>
               </div>
               <div
-                class="border-4 border-[#2696B0] rounded-lg relative w-[30%] pt-[1.1vw] pb-[0.83vw] px-[1.1vw]"
+                class="border-[0.27vw] border-[#2696B0] rounded-[0.55vw] relative w-[30%] pt-[1.1vw] pb-[0.83vw] px-[1.1vw]"
               >
                 <div
-                  class="bg-[#2696B0] rounded-full w-[3vw] h-[3vw] m-auto absolute top-[-1.73vw] left-[-0.34vw] translate-x-[-50%] p-[0.55vw]"
+                  class="bg-[#2696B0] rounded-full w-[6vw] h-[6vw] md:w-[3vw] md:h-[3vw] m-auto absolute top-[-1.73vw] left-[-0.34vw] translate-x-[-50%] p-[0.55vw]"
                 >
                   <p
-                    class="text-white text-center text-[1.66vw] leading-[1.7vw]"
+                    class="text-white text-center text-[3.5vw] md:text-[1.66vw] leading-[4vw] md:leading-[1.7vw]"
                   >
                     8
                   </p>
                 </div>
-                <h3 class="text-center text-[#2696B0] text-[1.66vw] font-bold">
+                <h3
+                  class="text-center text-[#2696B0] text-[3vw] md:text-[1.66vw] font-bold"
+                >
                   撮影
                 </h3>
                 <img
@@ -1345,7 +1874,9 @@
                   alt=""
                   class="w-[30%] m-auto pt-[0.55vw] pb-[0.27vw]"
                 />
-                <p class="text-center text-[#2696B0] text-[1.38vw]">
+                <p
+                  class="text-center text-[#2696B0] text-[2.8vw] md:text-[1.38vw]"
+                >
                   都度見積もり
                 </p>
 
@@ -1355,7 +1886,7 @@
                   >
                     <span
                       id="accordion-open-btn"
-                      class="text-[1.1vw] font-bold absolute top-[-12.2vw] right-[-1vw] w-[20vw] h-[15vw]"
+                      class="text-[3vw] md:text-[1.1vw] font-bold absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
                     >
                       <span class="relative bottom-[-10.4vw] left-[17vw]"
                         >＋</span
@@ -1363,32 +1894,34 @@
                     >
                     <span
                       id="accordion-close-btn"
-                      class="text-[1.1vw] font-bold hidden absolute absolute top-[-12.2vw] right-[-1vw] w-[20vw] h-[15vw]"
+                      class="text-[3vw] md:text-[1.1vw] font-bold hidden absolute absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
                       ><span class="relative bottom-[-10.4vw] left-[17vw]"
                         >ー</span
                       ></span
                     >
                   </button>
                   <div class="accordion-content hidden">
-                    <p class="text-[0.83vw] pt-[0.27vw]">
+                    <p class="text-[2vw] md:text-[0.83vw] pt-[0.27vw]">
                       撮影が必要なシーンにおいても、サポート可能です。交通費は実質請求となります。動画撮影やカメラ撮影（一眼レフ・iPhone等）にも対応しております。お持ちの機材を利用することも可能です。
                     </p>
                   </div>
                 </div>
               </div>
               <div
-                class="border-4 border-[#2696B0] rounded-lg relative w-[30%] pt-[1.1vw] pb-[0.83vw] px-[1.1vw]"
+                class="border-[0.27vw] border-[#2696B0] rounded-[0.55vw] relative w-[30%] pt-[1.1vw] pb-[0.83vw] px-[1.1vw]"
               >
                 <div
-                  class="bg-[#2696B0] rounded-full w-[3vw] h-[3vw] m-auto absolute top-[-1.73vw] left-[-0.34vw] translate-x-[-50%] p-[0.55vw]"
+                  class="bg-[#2696B0] rounded-full w-[6vw] h-[6vw] md:w-[3vw] md:h-[3vw] m-auto absolute top-[-1.73vw] left-[-0.34vw] translate-x-[-50%] p-[0.55vw]"
                 >
                   <p
-                    class="text-white text-center text-[1.66vw] leading-[1.7vw]"
+                    class="text-white text-center text-[3.5vw] md:text-[1.66vw] leading-[4vw] md:leading-[1.7vw]"
                   >
                     9
                   </p>
                 </div>
-                <h3 class="text-center text-[#2696B0] text-[1.66vw] font-bold">
+                <h3
+                  class="text-center text-[#2696B0] text-[3vw] md:text-[1.66vw] font-bold"
+                >
                   記事監修
                 </h3>
                 <img
@@ -1396,7 +1929,9 @@
                   alt=""
                   class="w-[30%] m-auto py-[0.55vw]"
                 />
-                <p class="text-center text-[#2696B0] text-[1.38vw]">
+                <p
+                  class="text-center text-[#2696B0] text-[2.8vw] md:text-[1.38vw]"
+                >
                   都度見積もり
                 </p>
 
@@ -1406,7 +1941,7 @@
                   >
                     <span
                       id="accordion-open-btn"
-                      class="text-[1.1vw] font-bold absolute top-[-12.2vw] right-[-1vw] w-[20vw] h-[15vw]"
+                      class="text-[3vw] md:text-[1.1vw] font-bold absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
                     >
                       <span class="relative bottom-[-10.4vw] left-[17vw]"
                         >＋</span
@@ -1414,14 +1949,14 @@
                     >
                     <span
                       id="accordion-close-btn"
-                      class="text-[1.1vw] font-bold hidden absolute absolute top-[-12.2vw] right-[-1vw] w-[20vw] h-[15vw]"
+                      class="text-[3vw] md:text-[1.1vw] font-bold hidden absolute absolute top-[-15vw] right-[1vw] md:top-[-12.2vw] md:right-[-1vw] w-[20vw] h-[15vw]"
                       ><span class="relative bottom-[-10.4vw] left-[17vw]"
                         >ー</span
                       ></span
                     >
                   </button>
                   <div class="accordion-content hidden">
-                    <p class="text-[0.83vw] pt-[0.27vw]">
+                    <p class="text-[2vw] md:text-[0.83vw] pt-[0.27vw]">
                       昨今重要視されている、資格保有や記事監修もご相談いただけます。記名記事/顔出し記事/実績記載/経歴記載/資格記載など、必要に応じてご相談いただけます。なお、担当選定にお時間要する場合や、対応が難しい場合もございます。
                     </p>
                   </div>
@@ -1430,70 +1965,82 @@
             </div>
 
             <div id="set-plan">
-              <h3 class="text-center pt-[4.4vw] text-[2vw]">丸っとプラン</h3>
+              <h3 class="text-center pt-[4.4vw] text-[4vw] md:text-[2vw]">
+                丸っとプラン
+              </h3>
 
-              <p class="text-center pt-[2.2vw] text-[1.5vw]">
+              <p class="text-center pt-[2.2vw] text-[2.5vw] md:text-[1.5vw]">
                 上記切り分けプランがセットになったお得な丸っとプランもございます！
               </p>
 
               <div
-                class="w-10/12 m-auto text-center flex justify-center pt-[1.66vw]"
+                class="w-[90%] md:w-10/12 m-auto text-center flex justify-center pt-[1.66vw]"
               >
-                <table class="border-separate border-spacing-0 text-[1.66vw]">
+                <table
+                  class="w-full md:w-auto border-separate border-spacing-0 text-[3.5vw] md:text-[1.66vw]"
+                >
                   <tr class="text-white">
                     <th
-                      class="bg-[#2696B0] rounded-tl-xl border-r border-[#B3B3B3] py-[1.1vw] px-[2.2vw]"
+                      class="bg-[#2696B0] rounded-tl-[0.83vw] md:rounded-tl-xl border-r-[0.069vw] md:border-r border-[#B3B3B3] py-[1.1vw] px-[2.2vw]"
                     ></th>
                     <th
-                      class="bg-[#2696B0] border-r border-[#B3B3B3] py-[1.1vw] px-[2.2vw]"
+                      class="bg-[#2696B0] border-r-[0.069vw] md:border-r border-[#B3B3B3] py-[1.1vw] px-[2.2vw]"
                     >
                       プラン❶
                     </th>
                     <th
-                      class="bg-[#2696B0] border-r border-[#B3B3B3] py-[1.1vw] px-[2.2vw]"
+                      class="bg-[#2696B0] border-r-[0.069vw] md:border-r border-[#B3B3B3] py-[1.1vw] px-[2.2vw]"
                     >
                       プラン❷
                     </th>
                     <th
-                      class="bg-[#2696B0] rounded-tr-xl py-[1.1vw] px-[2.2vw]"
+                      class="bg-[#2696B0] rounded-tr-[0.83vw] md:rounded-tr-xl py-[1.1vw] px-[2.2vw]"
                     >
                       プラン❸
                     </th>
                   </tr>
                   <tr>
-                    <td class="border border-[#B3B3B3] py-[2.2vw] px-[2.2vw]">
+                    <td
+                      class="border-[0.069vw] border-[#B3B3B3] py-[2.2vw] px-[2.2vw]"
+                    >
                       1記事当たり
                     </td>
                     <td
-                      class="border border-[#B3B3B3] py-[2.2vw] px-[2.2vw] text-[2.08vw] font-bold"
+                      class="border-[0.069vw] border-[#B3B3B3] py-[2.2vw] px-[2.2vw] text-[3.5vw] md:text-[2.08vw] font-bold"
                     >
                       20,000円
                     </td>
                     <td
-                      class="border border-[#B3B3B3] py-[2.2vw] px-[2.2vw] text-[2.08vw] font-bold"
+                      class="border-[0.069vw] border-[#B3B3B3] py-[2.2vw] px-[2.2vw] text-[3.5vw] md:text-[2.08vw] font-bold"
                     >
                       19,000円
                     </td>
                     <td
-                      class="text-red-500 border border-[#B3B3B3] py-[2.2vw] px-[2.2vw] text-[2.08vw] font-bold"
+                      class="text-red-500 border-[0.069vw] border-[#B3B3B3] py-[2.2vw] px-[2.2vw] text-[3.5vw] md:text-[2.08vw] font-bold"
                     >
                       18,000円
                     </td>
                   </tr>
-                  <tr class="rounded-xl border border-[#B3B3B3]">
+                  <tr
+                    class="rounded-[0.83vw] border-[0.069vw] border-[#B3B3B3]"
+                  >
                     <td
-                      class="rounded-bl-xl border border-[#B3B3B3] py-[2.2vw] px-[2.2vw]"
+                      class="rounded-bl-[0.83vw] md:rounded-bl-xl border-[0.069vw] border-[#B3B3B3] py-[2.2vw] px-[2.2vw]"
                     >
                       記事数
                     </td>
-                    <td class="border border-[#B3B3B3] py-[2.2vw] px-[2.2vw]">
+                    <td
+                      class="border-[0.069vw] border-[#B3B3B3] py-[2.2vw] px-[2.2vw]"
+                    >
                       1記事
                     </td>
-                    <td class="border border-[#B3B3B3] py-[2.2vw] px-[2.2vw]">
+                    <td
+                      class="border-[0.069vw] border-[#B3B3B3] py-[2.2vw] px-[2.2vw]"
+                    >
                       4記事以上
                     </td>
                     <td
-                      class="rounded-br-xl border border-[#B3B3B3] py-[2.2vw] px-[2.2vw]"
+                      class="rounded-br-[0.83vw] md:rounded-br-xl border-[0.069vw] border-[#B3B3B3] py-[2.2vw] px-[2.2vw]"
                     >
                       8記事以上
                     </td>
@@ -1503,16 +2050,18 @@
             </div>
 
             <div
-              class="flex justify-center w-10/12 m-auto gap-[1.66vw] mt-[2.2vw]"
+              class="flex justify-center w-[90%] md:w-10/12 m-auto gap-[1.66vw] mt-[2.2vw]"
             >
-              <div class="w-5/12">
+              <div class="w-6/12 md:w-5/12">
                 <h4
-                  class="text-white font-bold bg-[#2696B0] rounded-lg py-[0.55vw] px-[1.1vw] text-center text-[1.38vw]"
+                  class="text-white font-bold bg-[#2696B0] rounded-[0.55vw] py-[0.55vw] px-[1.1vw] text-center text-[3.2vw] md:text-[1.38vw]"
                 >
                   対応業務
                 </h4>
 
-                <div class="flex justify-between pt-[1.1vw] text-[1.38vw]">
+                <div
+                  class="flex justify-between pt-[1.1vw] text-[2.5vw] md:text-[1.38vw]"
+                >
                   <div class="w-[55%] flex flex-col gap-[0.83vw]">
                     <p>● キーワード選定</p>
                     <p>● 構成案作成</p>
@@ -1528,32 +2077,32 @@
                 </div>
               </div>
 
-              <div class="w-5/12 relative">
+              <div class="w-6/12 md:w-5/12 relative">
                 <h4
-                  class="text-white font-bold bg-[#2696B0] rounded-lg py-[0.55vw] px-[1.1vw] text-center text-[1.38vw]"
+                  class="text-white font-bold bg-[#2696B0] rounded-[0.55vw] py-[0.55vw] px-[1.1vw] text-center text-[3.2vw] md:text-[1.38vw]"
                 >
                   文字数
                 </h4>
 
-                <p class="pt-[2.2vw] text-center text-[1.66vw]">
+                <p class="pt-[2.2vw] text-center text-[3vw] md:text-[1.66vw]">
                   1記事2000字程度
                 </p>
 
                 <img
                   src="/img/plan-character.png"
                   alt=""
-                  class="absolute bottom-[-1.5vw] right-[-4vw] w-[5vw]"
+                  class="absolute bottom-[-1.5vw] right-[2vw] md:right-[-4vw] w-[8vw] md:w-[5vw]"
                 />
               </div>
             </div>
 
             <div
               id="cta-btn"
-              class="w-10/12 m-auto bg-[#F36B03] rounded-xl mt-[4.4vw] py-[1.66vw] hover:bg-yellow-500 duration-200 shadow-[0.34vw_0.34vw_1.38vw_0.13vw_rgba(0,0,0,0.5)]"
+              class="w-11/12 md:w-10/12 m-auto bg-[#F36B03] rounded-[0.83vw] mt-[4.4vw] py-[2vw] md:py-[1.66vw] hover:bg-yellow-500 duration-200 shadow-[0.34vw_0.34vw_1.38vw_0.13vw_rgba(0,0,0,0.5)]"
             >
               <a
                 href="#TOP"
-                class="text-white text-center block font-bold text-[2.08vw]"
+                class="text-white text-center block font-bold text-[5vw] md:text-[2.08vw]"
               >
                 記事作成代行の相談をする！　＞
               </a>
@@ -1563,56 +2112,62 @@
       </section>
       <section
         id=""
-        class="w-full bg-gradient-to-t from-[#33CC8C] to-[#6CA7E2]"
+        class="w-full bg-gradient-to-t from-[#6CA7E2] to-[#6CA7E2]"
       >
-        <div class="w-9/12">
-          <div class="w-[95%] m-auto bg-white relative pb-[1.38vw]">
-            <h2 class="text-center font-bold text-[2.8vw] pt-[5.5vw]">
+        <div class="w-[100%] m-auto md:m-0 md:w-9/12">
+          <div class="w-[100%] md:w-[95%] m-auto bg-white relative pb-[1.38vw]">
+            <h2
+              class="text-center font-bold text-[4.5vw] md:text-[2.8vw] pt-[5.5vw]"
+            >
               他社との比較
             </h2>
 
             <div class="flex items-end justify-center pt-[3.3vw] gap-[1.1vw]">
               <div class="flex flex-col gap-[1.38vw] text-white">
                 <div
-                  class="bg-[#565656] text-center py-[0.83vw] px-[1.66vw] text-[1.38vw] rounded-xl"
+                  class="bg-[#565656] text-center py-[0.83vw] px-[1.66vw] text-[3.5vw] md:text-[1.38vw] rounded-[0.83vw]"
                 >
                   価格
                 </div>
                 <div
-                  class="bg-[#565656] text-center py-[0.83vw] px-[1.66vw] text-[1.38vw] rounded-xl"
+                  class="bg-[#565656] text-center py-[0.83vw] px-[1.66vw] text-[3.5vw] md:text-[1.38vw] rounded-[0.83vw]"
                 >
                   最低発注本数
                 </div>
                 <div
-                  class="bg-[#565656] text-center py-[0.83vw] px-[1.66vw] text-[1.38vw] rounded-xl"
+                  class="bg-[#565656] text-center py-[0.83vw] px-[1.66vw] text-[3.5vw] md:text-[1.38vw] rounded-[0.83vw]"
                 >
                   最低契約期間
                 </div>
                 <div
-                  class="bg-[#565656] text-center py-[0.83vw] px-[1.66vw] text-[1.38vw] rounded-xl"
+                  class="bg-[#565656] text-center py-[0.83vw] px-[1.66vw] text-[3.5vw] md:text-[1.38vw] rounded-[0.83vw]"
                 >
                   チーム体制
                 </div>
                 <div
-                  class="bg-[#565656] text-center py-[0.83vw] px-[1.66vw] text-[1.38vw] rounded-xl"
+                  class="bg-[#565656] text-center py-[0.83vw] px-[1.66vw] text-[3.5vw] md:text-[1.38vw] rounded-[0.83vw]"
                 >
                   初期費用
                 </div>
                 <div
-                  class="bg-[#565656] text-center py-[0.83vw] px-[1.66vw] text-[1.38vw] rounded-xl"
+                  class="bg-[#565656] text-center py-[0.83vw] px-[1.66vw] text-[3.5vw] md:text-[1.38vw] rounded-[0.83vw]"
                 >
                   対応業務
                 </div>
               </div>
 
               <!-- A社 -->
-              <div class="border-2 rounded-xl flex flex-col gap-[1.38vw]">
+              <div
+                class="border-[0.138vw] rounded-[0.83vw] flex flex-col gap-[1.38vw]"
+              >
                 <div
-                  class="bg-[#565656] text-center py-[1.1vw] px-[4.4vw] text-[1.38vw] rounded-xl text-white"
+                  class="bg-[#565656] text-center py-[1.1vw] px-[4.4vw] text-[3.5vw] md:text-[1.38vw] rounded-[0.83vw] text-white"
                 >
                   A社
                 </div>
-                <div class="text-[1.38vw] text-center flex flex-col">
+                <div
+                  class="text-[3.5vw] md:text-[1.38vw] text-center flex flex-col"
+                >
                   <p class="pb-[3.05vw] pt-[0.55vw]">30,000円</p>
                   <p class="">2記事〜</p>
                   <p class="py-[3.05vw]">3カ月〜</p>
@@ -1622,33 +2177,37 @@
                 </div>
               </div>
               <div
-                class="border-2 border-[#F36B03] rounded-xl flex flex-col gap-[1.38vw]"
+                class="border-[0.138vw] border-[#F36B03] rounded-[0.83vw] flex flex-col gap-[1.38vw]"
               >
                 <div
-                  class="bg-[#F36B03] text-center py-[1.1vw] px-[3.3vw] text-[1.66vw] rounded-lg text-white"
+                  class="bg-[#F36B03] text-center py-[1.1vw] px-[3.3vw] text-[4vw] md:text-[1.66vw] rounded-[0.55vw] text-white"
                 >
                   MokuMoku
                 </div>
                 <div
-                  class="text-[#F36B03] flex flex-col text-[1.66vw] text-center font-bold"
+                  class="text-[#F36B03] flex flex-col text-[3.6vw] md:text-[1.66vw] text-center font-bold"
                 >
                   <p class="pt-[1.1vw] pb-[2.7vw]">18,000円〜</p>
                   <p class="pb-[3.05vw]">1記事〜</p>
                   <p class="pb-[1.94vw]">1カ月〜</p>
-                  <p class="pb-[1.66vw] text-[1.38vw]">
+                  <p class="pb-[1.66vw] text-[3vw] md:text-[1.38vw]">
                     専門チーム<br />で対応
                   </p>
                   <p class="pb-[2.7vw]">0円(無料)</p>
                   <p class="pb-[0.83vw]">丸っと対応</p>
                 </div>
               </div>
-              <div class="border-2 rounded-xl flex flex-col gap-[1.38vw]">
+              <div
+                class="border-[0.138vw] rounded-[0.83vw] flex flex-col gap-[1.38vw]"
+              >
                 <div
-                  class="bg-[#565656] text-center py-[1.1vw] px-[4.4vw] text-[1.38vw] rounded-xl text-white"
+                  class="bg-[#565656] text-center py-[1.1vw] px-[4.4vw] text-[3.5vw] md:text-[1.38vw] rounded-[0.83vw] text-white"
                 >
                   B社
                 </div>
-                <div class="text-[1.38vw] text-center flex flex-col">
+                <div
+                  class="text-[3.5vw] md:text-[1.38vw] text-center flex flex-col"
+                >
                   <p class="pb-[3.05vw] pt-[0.55vw]">50,000円</p>
                   <p class="">5記事〜</p>
                   <p class="py-[3.05vw]">6カ月〜</p>
@@ -1663,12 +2222,14 @@
       </section>
       <section
         id=""
-        class="w-full bg-gradient-to-b from-[#33CC8C] to-[#6CA7E2]"
+        class="w-full bg-gradient-to-b from-[#6CA7E2] to-[#6CA7E2]"
       >
-        <div class="w-9/12">
-          <div class="w-[95%] m-auto bg-white relative pt-[2vw]">
+        <div class="w-[100%] m-auto md:m-0 md:w-9/12">
+          <div class="w-[100%] md:w-[95%] m-auto bg-white relative pt-[2vw]">
             <div class="w-10/12 m-auto">
-              <h2 class="text-[2.8vw] font-bold text-center mb-[2.2vw]">
+              <h2
+                class="text-[5vw] md:text-[2.8vw] font-bold text-center mb-[2.2vw]"
+              >
                 ライター紹介
               </h2>
               <div class="slider py-[2.2vw]">
@@ -1677,10 +2238,14 @@
                   <img
                     src="/img/古川.png"
                     alt=""
-                    class="bg-gray-200 rounded-full w-[13.3vw] h-[13.3vw] mx-auto mb-[1.1vw] flex items-center justify-center"
+                    class="bg-gray-200 rounded-full w-[30vw] h-[30vw] md:w-[13.3vw] md:h-[13.3vw] mx-auto mb-[1.1vw] flex items-center justify-center"
                   />
-                  <h3 class="text-[1.25vw] font-bold">古川諭香</h3>
-                  <div class="text-[0.97vw] text-left pt-[0.55vw]">
+                  <h3 class="text-[3.5vw] md:text-[1.25vw] font-bold">
+                    古川諭香
+                  </h3>
+                  <div
+                    class="text-[2.2vw] md:text-[0.97vw] text-left pt-[0.55vw]"
+                  >
                     <p>
                       誤解なく、できる限りそのままの温度感で当事者の感情が伝わる記事を執筆いたします。
                       <br />
@@ -1695,10 +2260,12 @@
                   <img
                     src="/img/xu.png"
                     alt=""
-                    class="bg-gray-200 rounded-full w-[13.3vw] h-[13.3vw] mx-auto mb-[0.55vw] flex items-center justify-center"
+                    class="bg-gray-200 rounded-full w-[30vw] h-[30vw] md:w-[13.3vw] md:h-[13.3vw] mx-auto mb-[0.55vw] flex items-center justify-center"
                   />
-                  <h3 class="text-[1.66vw] font-bold">xu</h3>
-                  <div class="text-[0.97vw] text-left pt-[0.55vw]">
+                  <h3 class="text-[4vw] md:text-[1.66vw] font-bold">xu</h3>
+                  <div
+                    class="text-[2.2vw] md:text-[0.97vw] text-left pt-[0.55vw]"
+                  >
                     <p>
                       「思いを正しく伝えること」を大切にしております。人は何かを伝えたくて文章を書くことが多いと思います。私は、そういった部分にも考えを巡らせ、言葉の裏に隠された大切な思いを引き出し、より魅力的に伝える文章を得意としています。
                       <br /><br />
@@ -1711,10 +2278,14 @@
                   <img
                     src="/img/豆塚.png"
                     alt=""
-                    class="bg-gray-200 rounded-full w-[13.3vw] h-[13.3vw] mx-auto mb-[1.1vw] flex items-center justify-center"
+                    class="bg-gray-200 rounded-full w-[30vw] h-[30vw] md:w-[13.3vw] md:h-[13.3vw] mx-auto mb-[1.1vw] flex items-center justify-center"
                   />
-                  <h3 class="text-[1.25vw] font-bold">豆塚エリ</h3>
-                  <div class="text-[0.97vw] text-left pt-[0.55vw]">
+                  <h3 class="text-[3.5vw] md:text-[1.25vw] font-bold">
+                    豆塚エリ
+                  </h3>
+                  <div
+                    class="text-[2.2vw] md:text-[0.97vw] text-left pt-[0.55vw]"
+                  >
                     <p>
                       自己表現を得意とし、コラムやエッセイ、詩、短歌、小説など、多岐にわたる作品を創作しています。感情の微細な描写と詩的な表現を駆使して、読者の琴線に触れる作品作りを目指しています。<br /><br />
                       頚髄損傷の身体障がいを抱え、車椅子ユーザー。
@@ -1727,10 +2298,14 @@
                   <img
                     src="/img/瀧澤.png"
                     alt=""
-                    class="bg-gray-200 rounded-full w-[13.3vw] h-[13.3vw] mx-auto mb-[1.1vw] flex items-center justify-center"
+                    class="bg-gray-200 rounded-full w-[30vw] h-[30vw] md:w-[13.3vw] md:h-[13.3vw] mx-auto mb-[1.1vw] flex items-center justify-center"
                   />
-                  <h3 class="text-[1.25vw] font-bold">瀧澤 亮</h3>
-                  <div class="text-[0.97vw] text-left pt-[0.55vw]">
+                  <h3 class="text-[3.5vw] md:text-[1.25vw] font-bold">
+                    瀧澤 亮
+                  </h3>
+                  <div
+                    class="text-[2.2vw] md:text-[0.97vw] text-left pt-[0.55vw]"
+                  >
                     <p>
                       細かくスピーディーなコミュニケーションを心がけています。
                       また、常に相手都合で物事を考え、クライアントや読者のニーズを最大限に汲み取る意識を持ち続けています。
@@ -1744,10 +2319,14 @@
                   <img
                     src="/img/kakihuku.jpeg"
                     alt=""
-                    class="bg-gray-200 rounded-full w-[13.3vw] h-[13.3vw] mx-auto mb-[1.1vw] flex items-center justify-center"
+                    class="bg-gray-200 rounded-full w-[30vw] h-[30vw] md:w-[13.3vw] md:h-[13.3vw] mx-auto mb-[1.1vw] flex items-center justify-center"
                   />
-                  <h3 class="text-[1.25vw] font-bold">垣副 秀作</h3>
-                  <div class="text-[0.97vw] text-left pt-[0.55vw]">
+                  <h3 class="text-[3.5vw] md:text-[1.25vw] font-bold">
+                    垣副 秀作
+                  </h3>
+                  <div
+                    class="text-[2.2vw] md:text-[0.97vw] text-left pt-[0.55vw]"
+                  >
                     <p>
                       コミュニケーションを密に行うことでクライアントの考え理解に努め、心を込めた文章を作成いたします。
                       また、SNSマーケティングの経験が長く、XやInstagramなど各種SNS用の文章作成も得意です。その他、SEO記事やHP・LPの文章など、読み手にとって魅力的な文章をご提供いたします！
@@ -1785,7 +2364,9 @@
                 </div> -->
               </div>
 
-              <p class="text-right pt-[1.66vw] text-[0.9vw]">
+              <p
+                class="text-left md:text-right pt-[1.66vw] text-[2.5vw] md:text-[0.9vw]"
+              >
                 登録ライターは多様なバックグラウンドを持っており、それぞれの適性に応じてチームを編成することで高い品質を維持しています。<br />
                 障がいを持つライターの雇用に関しても直接雇用のご相談を承っておりますので、お気軽にお問い合わせください。
               </p>
@@ -1796,76 +2377,98 @@
 
       <section
         id=""
-        class="w-full bg-gradient-to-t from-[#33CC8C] to-[#6CA7E2]"
+        class="w-full bg-gradient-to-t from-[#6CA7E2] to-[#6CA7E2]"
       >
-        <div class="w-9/12">
-          <div class="w-[95%] m-auto bg-white relative pb-[2.2vw]">
-            <div class="w-11/12 m-auto">
-              <h2 class="text-center font-bold text-[2.8vw] pt-[6.6vw]">
+        <div class="w-[100%] m-auto md:m-0 md:w-9/12">
+          <div class="w-[100%] md:w-[95%] m-auto bg-white relative pb-[2.2vw]">
+            <div class="w-[96%] md:w-11/12 m-auto">
+              <h2
+                class="text-center font-bold text-[5vw] md:text-[2.8vw] pt-[6.6vw]"
+              >
                 MokuMokuの記事作成代行は<br />
-                ＼<span class="text-[#F36B03] text-[3.5vw]"
+                ＼<span class="text-[#F36B03] text-[5.5vw] md:text-[3.5vw]"
                   >安心体制で高品質な記事</span
                 >をご提供／
               </h2>
 
-              <div class="flex gap-[0.83vw] pt-[3.3vw] items-start">
+              <div class="flex gap-[0.83vw] pt-[6vw] md:pt-[3.3vw] items-start">
                 <!-- MokuMokuチーム -->
-                <div class="border-4 border-[#2696B0] relative w-8/12">
+                <div class="border-[0.27vw] border-[#2696B0] relative w-8/12">
                   <div
-                    class="bg-[#2696B0] text-white rounded-sm absolute top-[-1.04vw] left-[50%] translate-x-[-50%] w-9/12 m-auto"
+                    class="bg-[#2696B0] text-white rounded-sm absolute top-[-2.5vw] md:top-[-1.04vw] left-[50%] translate-x-[-50%] w-9/12 m-auto"
                   >
                     <p
-                      class="text-[2.08vw] px-[0.83vw] py-[0.27vw] w-full text-center"
+                      class="text-[4vw] md:text-[2.08vw] px-[0.83vw] py-[0.27vw] w-full text-center"
                     >
                       「MokuMoku」チーム
                     </p>
                   </div>
 
                   <div
-                    class="flex items-start gap-[1.1vw] text-[#2696B0] justify-center pt-[3.3vw] pb-[2.2vw]"
+                    class="flex items-start gap-[1.1vw] text-[#2696B0] justify-center pt-[5vw] md:pt-[3.3vw] pb-[2.2vw]"
                   >
-                    <div class="text-[2.08vw] text-center">
+                    <div class="text-[4vw] md:text-[2.08vw] text-center">
                       <p>執筆</p>
 
                       <p
                         id="vertical-text"
-                        class="text-white bg-[#2696B0] w-fit m-auto p-[1.1vw] mt-[0.55vw] rounded-md"
+                        class="text-white bg-[#2696B0] w-fit m-auto p-[1.1vw] mt-[0.55vw] rounded-[0.416vw]"
                       >
                         ライター
                       </p>
                     </div>
 
-                    <div class="text-center mt-[4.4vw] text-[1.1vw]">
+                    <div
+                      class="text-center mt-[4.4vw] text-[2vw] md:text-[1.1vw]"
+                    >
                       <p>確認</p>
-                      <img src="/img/toRight.png" alt="" class="w-[5.83vw]" />
-                      <img src="/img/toLeft.png" alt="" class="w-[5.83vw]" />
+                      <img
+                        src="/img/toRight.png"
+                        alt=""
+                        class="w-[7vw] md:w-[5.83vw]"
+                      />
+                      <img
+                        src="/img/toLeft.png"
+                        alt=""
+                        class="w-[7vw] md:w-[5.83vw]"
+                      />
                       <p>差し戻し</p>
                     </div>
 
-                    <div class="text-[2.08vw] text-center">
+                    <div class="text-[4vw] md:text-[2.08vw] text-center">
                       <p>確認</p>
 
                       <p
                         id="vertical-text"
-                        class="text-white bg-[#2696B0] w-fit m-auto p-[1.1vw] mt-[0.55vw] rounded-md"
+                        class="text-white bg-[#2696B0] w-fit m-auto p-[1.1vw] mt-[0.55vw] rounded-[0.416vw]"
                       >
                         チェッカー
                       </p>
                     </div>
 
-                    <div class="text-center mt-[4.4vw] text-[1.1vw]">
+                    <div
+                      class="text-center mt-[4.4vw] text-[2vw] md:text-[1.1vw]"
+                    >
                       <p>確認</p>
-                      <img src="/img/toRight.png" alt="" class="w-[5.83vw]" />
-                      <img src="/img/toLeft.png" alt="" class="w-[5.83vw]" />
+                      <img
+                        src="/img/toRight.png"
+                        alt=""
+                        class="w-[7vw] md:w-[5.83vw]"
+                      />
+                      <img
+                        src="/img/toLeft.png"
+                        alt=""
+                        class="w-[7vw] md:w-[5.83vw]"
+                      />
                       <p>差し戻し</p>
                     </div>
 
-                    <div class="text-[2.08vw] text-center">
+                    <div class="text-[4vw] md:text-[2.08vw] text-center">
                       <p>管理</p>
 
                       <p
                         id="vertical-text"
-                        class="text-white bg-[#2696B0] w-fit m-auto p-[1.1vw] mt-[0.55vw] rounded-md"
+                        class="text-white bg-[#2696B0] w-fit m-auto p-[1.1vw] mt-[0.55vw] rounded-[0.416vw]"
                       >
                         ディレクター
                       </p>
@@ -1873,30 +2476,44 @@
                   </div>
                 </div>
 
-                <div class="text-[#2696B0] text-center mt-[6.6vw] text-[1.1vw]">
+                <div
+                  class="text-[#2696B0] text-center mt-[8vw] md:mt-[6.6vw] text-[2vw] md:text-[1.1vw]"
+                >
                   <p>確認</p>
-                  <img src="/img/toRight.png" alt="" class="w-[5.83vw]" />
-                  <img src="/img/toLeft.png" alt="" class="w-[5.83vw]" />
+                  <img
+                    src="/img/toRight.png"
+                    alt=""
+                    class="w-[7vw] md:w-[5.83vw]"
+                  />
+                  <img
+                    src="/img/toLeft.png"
+                    alt=""
+                    class="w-[7vw] md:w-[5.83vw]"
+                  />
                   <p>差し戻し</p>
                 </div>
 
                 <!-- お客様 -->
-                <div class="border-4 border-[#2696B0] relative w-3/12">
+                <div
+                  class="border-[0.27vw] border-[#2696B0] relative w-[23%] md:w-3/12"
+                >
                   <div
-                    class="bg-[#2696B0] text-white rounded-sm absolute top-[-15px] left-[50%] translate-x-[-50%] w-9/12 text-center"
+                    class="bg-[#2696B0] text-white rounded-sm absolute top-[-2.5vw] md:top-[-1.04vw] left-[50%] translate-x-[-50%] w-9/12 text-center"
                   >
-                    <p class="text-[2.08vw] px-[0.83vw] py-1">お客様</p>
+                    <p class="text-[3.8vw] md:text-[2.08vw] px-[0.83vw] py-1">
+                      お客様
+                    </p>
                   </div>
 
                   <div
-                    class="flex text-[#2696B0] justify-center pt-[3.3vw] pb-[4.4vw]"
+                    class="flex text-[#2696B0] justify-center pt-[5vw] md:pt-[3.3vw] pb-[4.4vw]"
                   >
-                    <div class="text-[2.08vw] text-center">
+                    <div class="text-[4vw] md:text-[2.08vw] text-center">
                       <p class="">納品</p>
 
                       <p
                         id="vertical-text"
-                        class="text-white bg-[#2696B0] w-fit m-auto p-[1.1vw] mt-[0.55vw] rounded-md"
+                        class="text-white bg-[#2696B0] w-fit m-auto p-[1.1vw] mt-[0.55vw] rounded-[0.416vw]"
                       >
                         ご担当者様
                       </p>
@@ -1907,42 +2524,42 @@
 
               <!-- 各役割 -->
               <div class="flex justify-between w-full m-auto pt-[4.4vw]">
-                <div class="w-[30%] text-center">
-                  <h3 class="text-[1.66vw]">ライター</h3>
+                <div class="w-[33%] md:w-[30%] text-center">
+                  <h3 class="text-[4vw] md:text-[1.66vw]">ライター</h3>
                   <img
                     src="/img/writer-icon.png"
                     alt=""
-                    class="w-[8.125vw] m-auto py-[0.83vw]"
+                    class="w-[15vw] md:w-[8.125vw] m-auto py-[0.83vw]"
                   />
-                  <p class="text-left text-[1.1vw]">
+                  <p class="text-left text-[2.3vw] md:text-[1.1vw]">
                     「MokuMoku」の一定基準を満たした方をライターとして登録し、各自の特性を加味してチームに加えていきます。<span
                       class="text-[#F36B03]"
                       >「MokuMoku」独自の仕組みをもって記事品質の平準化を図ります。</span
                     >
                   </p>
                 </div>
-                <div class="w-[30%] text-center">
-                  <h3 class="text-[1.66vw]">チェッカー</h3>
+                <div class="w-[33%] md:w-[30%] text-center">
+                  <h3 class="text-[4vw] md:text-[1.66vw]">チェッカー</h3>
                   <img
                     src="/img/checker-icon.png"
                     alt=""
-                    class="w-[8.125vw] m-auto py-[0.83vw]"
+                    class="w-[14.3vw] md:w-[8.125vw] m-auto py-[0.83vw]"
                   />
-                  <p class="text-left text-[1.1vw]">
+                  <p class="text-left text-[2.3vw] md:text-[1.1vw]">
                     ライターの記事を読者視点から確認し、<span
                       class="text-[#F36B03]"
                       >お客様自身の確認の手間をなくします。</span
                     >表記ゆれや情報正誤確認などを行い、時にライターへの差し戻しも行いながら、記事品質の最大化を図ります。
                   </p>
                 </div>
-                <div class="w-[30%] text-center">
-                  <h3 class="text-[1.66vw]">ディレクター</h3>
+                <div class="w-[33%] md:w-[30%] text-center">
+                  <h3 class="text-[4vw] md:text-[1.66vw]">ディレクター</h3>
                   <img
                     src="/img/director-icon.png"
                     alt=""
-                    class="w-[8.525vw] m-auto py-[0.83vw]"
+                    class="w-[14.8vw] md:w-[8.525vw] m-auto py-[0.83vw]"
                   />
-                  <p class="text-left text-[1.1vw]">
+                  <p class="text-left text-[2.3vw] md:text-[1.1vw]">
                     チェッカーとライターを管理し、<span class="text-[#F36B03]"
                       >お客様自身の管理工数を最小限に抑えます。</span
                     >質の高い記事と仕事で提供価値の最大化を図ります。
@@ -1952,11 +2569,11 @@
             </div>
             <div
               id="cta-btn"
-              class="w-10/12 m-auto bg-[#F36B03] rounded-xl mt-[4.4vw] py-[1.66vw] hover:bg-yellow-500 duration-200 shadow-[0.34vw_0.34vw_1.38vw_0.13vw_rgba(0,0,0,0.5)]"
+              class="w-11/12 md:w-10/12 m-auto bg-[#F36B03] rounded-[0.83vw] mt-[4.4vw] py-[2vw] md:py-[1.66vw] hover:bg-yellow-500 duration-200 shadow-[0.34vw_0.34vw_1.38vw_0.13vw_rgba(0,0,0,0.5)]"
             >
               <a
                 href="#TOP"
-                class="text-white text-center block font-bold text-[2.08vw]"
+                class="text-white text-center block font-bold text-[5vw] md:text-[2.08vw]"
               >
                 記事作成代行の相談をする！　＞
               </a>
@@ -1966,100 +2583,128 @@
       </section>
       <section
         id=""
-        class="w-full bg-gradient-to-b from-[#33CC8C] to-[#6CA7E2]"
+        class="w-full bg-gradient-to-b from-[#6CA7E2] to-[#6CA7E2]"
       >
-        <div class="w-9/12">
-          <div class="w-[95%] m-auto bg-white relative">
-            <h2 class="text-center font-bold text-[2.8vw] pt-[5.5vw]">
+        <div class="w-[100%] m-auto md:m-0 md:w-9/12">
+          <div class="w-[100%] md:w-[95%] m-auto bg-white relative">
+            <h2
+              class="text-center font-bold text-[5vw] md:text-[2.8vw] pt-[5.5vw]"
+            >
               無料相談から納品完了までの流れ
             </h2>
             <div
               class="flex justify-center items-center gap-[0.83vw] pt-[2.2vw]"
             >
               <div>
-                <p class="text-center text-[1.25vw]">STEP.1</p>
+                <p class="text-center text-[3vw] md:text-[1.25vw]">STEP.1</p>
                 <div
-                  class="w-[10vw] h-[10vw] rounded-full bg-[#FFD862] flex justify-center items-center"
+                  class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] rounded-full bg-[#FFD862] flex justify-center items-center"
                 >
                   <div>
                     <img
                       src="/img/flow-mail.png"
                       alt=""
-                      class="w-[4.72vw] m-auto"
+                      class="w-[8vw] md:w-[4.72vw] m-auto"
                     />
-                    <p class="text-center pt-[0.55vw] text-[1.1vw]">
+                    <p
+                      class="text-center pt-[0.55vw] text-[2vw] md:text-[1.1vw]"
+                    >
                       お問い合わせ
                     </p>
                   </div>
                 </div>
               </div>
-              <img src="/img/flow-triangle.png" alt="" class="w-4 h-4" />
+              <img
+                src="/img/flow-triangle.png"
+                alt=""
+                class="w-[2.5vw] h-[2.5vw] md:w-[1.1vw] md:h-[1.1vw]"
+              />
               <div>
-                <p class="text-center text-[1.25vw]">STEP.2</p>
+                <p class="text-center text-[3vw] md:text-[1.25vw]">STEP.2</p>
                 <div
-                  class="w-[10vw] h-[10vw] rounded-full bg-[#FFD862] flex justify-center items-center"
+                  class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] rounded-full bg-[#FFD862] flex justify-center items-center"
                 >
                   <div>
                     <img
                       src="/img/flow-hearing.png"
                       alt=""
-                      class="w-[2.84vw] m-auto"
+                      class="w-[5vw] md:w-[2.84vw] m-auto"
                     />
-                    <p class="text-center text-[1vw] pt-[0.55vw]">
+                    <p class="text-center text-[2vw] md:text-[1vw] pt-[0.55vw]">
                       ヒアリング<br />
                       / 見積もり
                     </p>
                   </div>
                 </div>
               </div>
-              <img src="/img/flow-triangle.png" alt="" class="w-4 h-4" />
+              <img
+                src="/img/flow-triangle.png"
+                alt=""
+                class="w-[2.5vw] h-[2.5vw] md:w-[1.1vw] md:h-[1.1vw]"
+              />
               <div>
-                <p class="text-center text-[1.25vw]">STEP.3</p>
+                <p class="text-center text-[3vw] md:text-[1.25vw]">STEP.3</p>
                 <div
-                  class="w-[10vw] h-[10vw] rounded-full bg-[#FFD862] flex justify-center items-center"
+                  class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] rounded-full bg-[#FFD862] flex justify-center items-center"
                 >
                   <div>
                     <img
                       src="/img/flow-cash.png"
                       alt=""
-                      class="w-[4.4vw] m-auto pt-[0.55vw]"
+                      class="w-[7vw] md:w-[4.4vw] m-auto pt-[0.55vw]"
                     />
-                    <p class="text-center text-[1vw] pt-[0.55vw]">
+                    <p class="text-center text-[2vw] md:text-[1vw] pt-[0.55vw]">
                       ご請求<br />
                       / お支払い
                     </p>
                   </div>
                 </div>
               </div>
-              <img src="/img/flow-triangle.png" alt="" class="w-4 h-4" />
+              <img
+                src="/img/flow-triangle.png"
+                alt=""
+                class="w-[2.5vw] h-[2.5vw] md:w-[1.1vw] md:h-[1.1vw]"
+              />
               <div>
-                <p class="text-center text-[1.25vw]">STEP.4</p>
+                <p class="text-center text-[3vw] md:text-[1.25vw]">STEP.4</p>
                 <div
-                  class="w-[10vw] h-[10vw] rounded-full bg-[#FFD862] flex justify-center items-center"
+                  class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] rounded-full bg-[#FFD862] flex justify-center items-center"
                 >
                   <div>
                     <img
                       src="/img/flow-creative.png"
                       alt=""
-                      class="w-[3.125vw] m-auto"
+                      class="w-[5.5vw] md:w-[3.125vw] m-auto"
                     />
-                    <p class="text-center pt-[0.27vw] text-[1.1vw]">制作開始</p>
+                    <p
+                      class="text-center pt-[0.27vw] text-[2vw] md:text-[1.1vw]"
+                    >
+                      制作開始
+                    </p>
                   </div>
                 </div>
               </div>
-              <img src="/img/flow-triangle.png" alt="" class="w-4 h-4" />
+              <img
+                src="/img/flow-triangle.png"
+                alt=""
+                class="w-[2.5vw] h-[2.5vw] md:w-[1.1vw] md:h-[1.1vw]"
+              />
               <div>
-                <p class="text-center text-[1.25vw]">STEP.5</p>
+                <p class="text-center text-[3vw] md:text-[1.25vw]">STEP.5</p>
                 <div
-                  class="w-[10vw] h-[10vw] rounded-full bg-[#FFD862] flex justify-center items-center"
+                  class="w-[15vw] h-[15vw] md:w-[10vw] md:h-[10vw] rounded-full bg-[#FFD862] flex justify-center items-center"
                 >
                   <div>
                     <img
                       src="/img/flow-complete.png"
                       alt=""
-                      class="w-[4.30vw] m-auto"
+                      class="w-[8vw] md:w-[4.30vw] m-auto"
                     />
-                    <p class="text-center pt-[0.27vw] text-[1.1vw]">納品完了</p>
+                    <p
+                      class="text-center pt-[0.27vw] text-[2vw] md:text-[1.1vw]"
+                    >
+                      納品完了
+                    </p>
                   </div>
                 </div>
               </div>
@@ -2070,26 +2715,30 @@
 
       <section
         id=""
-        class="w-full bg-gradient-to-t from-[#33CC8C] to-[#6CA7E2]"
+        class="w-full bg-gradient-to-t from-[#6CA7E2] to-[#6CA7E2]"
       >
-        <div class="w-9/12">
-          <div class="w-[95%] m-auto bg-white relative pt-[6.6vw]">
-            <div class="w-[95%] m-auto border-gray-400 rounded-xl py-[1.1vw]">
-              <h2 class="text-center font-bold text-[2.8vw]">よくあるご質問</h2>
+        <div class="w-[100%] m-auto md:m-0 md:w-9/12">
+          <div class="w-[100%] md:w-[95%] m-auto bg-white relative pt-[6.6vw]">
+            <div
+              class="w-[95%] m-auto border-gray-400 rounded-[0.83vw] py-[1.1vw]"
+            >
+              <h2 class="text-center font-bold text-[5vw] md:text-[2.8vw]">
+                よくあるご質問
+              </h2>
               <div class="accordion2 pt-[2.7vw]">
                 <!-- アコーディオンアイテム 1 -->
                 <div class="accordion-item2 border-b-2 border-gray-200">
                   <button
-                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
+                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[3vw] md:text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <p class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[3.5vw] md:text-[1.66vw]">
                       <span class="text-[#2FADCA]">Q.</span>
                       いつ頃見積もりがもらえますか？
-                    </p>
+                    </h3>
                     <span id="question-triangle">◀</span>
                   </button>
                   <div class="accordion-content2 p-[1.1vw] hidden">
-                    <p class="flex gap-[0.83vw] text-[1.38vw]">
+                    <p class="flex gap-[0.83vw] text-[3vw] md:text-[1.38vw]">
                       <span class="text-[#F36B03]">A.</span>
                       <span
                         ><span class="text-[#F36B03]"
@@ -2102,16 +2751,16 @@
                 <!-- アコーディオンアイテム 2 -->
                 <div class="accordion-item2 border-b-2 border-gray-200">
                   <button
-                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
+                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[3vw] md:text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[3.5vw] md:text-[1.66vw]">
                       <span class="text-[#2FADCA]">Q.</span>
                       どんなライティングでも対応可能でしょうか？
                     </h3>
                     <span id="question-triangle">◀</span>
                   </button>
                   <div class="accordion-content2 p-[1.1vw] bg-white hidden">
-                    <p class="flex gap-[0.83vw] text-[1.38vw]">
+                    <p class="flex gap-[0.83vw] text-[3vw] md:text-[1.38vw]">
                       <span class="text-[#F36B03]">A.</span>
                       <span
                         >基本的には<span class="text-[#F36B03]"
@@ -2123,16 +2772,16 @@
                 </div>
                 <div class="accordion-item2 border-b-2 border-gray-200">
                   <button
-                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
+                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[3vw] md:text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[3vw] md:text-[1.66vw]">
                       <span class="text-[#2FADCA]">Q.</span>
                       専門分野(ニッチジャンル)で記事制作できる方はいますか？
                     </h3>
                     <span id="question-triangle">◀</span>
                   </button>
                   <div class="accordion-content2 p-[1.1vw] bg-white hidden">
-                    <p class="flex gap-[0.83vw] text-[1.38vw]">
+                    <p class="flex gap-[0.83vw] text-[3vw] md:text-[1.38vw]">
                       <span class="text-[#F36B03]">A.</span>
                       <span
                         ><span class="text-[#F36B03] block"
@@ -2144,16 +2793,16 @@
                 </div>
                 <div class="accordion-item2 border-b-2 border-gray-200">
                   <button
-                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
+                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[3vw] md:text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[3.5vw] md:text-[1.66vw]">
                       <span class="text-[#2FADCA]">Q.</span>
                       1記事からでも依頼できますか？
                     </h3>
                     <span id="question-triangle">◀</span>
                   </button>
                   <div class="accordion-content2 p-[1.1vw] bg-white hidden">
-                    <p class="flex gap-[0.83vw] text-[1.38vw]">
+                    <p class="flex gap-[0.83vw] text-[3vw] md:text-[1.38vw]">
                       <span class="text-[#F36B03]">A.</span>
                       <span>
                         <span class="text-[#F36B03]"
@@ -2165,16 +2814,16 @@
                 </div>
                 <div class="accordion-item2 border-b-2 border-gray-200">
                   <button
-                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
+                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[3vw] md:text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[3.5vw] md:text-[1.66vw]">
                       <span class="text-[#2FADCA]">Q.</span>
                       大量発注で安くなりますか？
                     </h3>
                     <span id="question-triangle">◀</span>
                   </button>
                   <div class="accordion-content2 p-[1.1vw] bg-white hidden">
-                    <p class="flex gap-[0.83vw] text-[1.38vw]">
+                    <p class="flex gap-[0.83vw] text-[3vw] md:text-[1.38vw]">
                       <span class="text-[#F36B03]">A.</span>
                       <span>
                         <span class="text-[#F36B03]"
@@ -2186,16 +2835,16 @@
                 </div>
                 <div class="accordion-item2 border-b-2 border-gray-200">
                   <button
-                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
+                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[3vw] md:text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[3.5vw] md:text-[1.66vw]">
                       <span class="text-[#2FADCA]">Q.</span>
                       最短でいつ納品されますか？
                     </h3>
                     <span id="question-triangle">◀</span>
                   </button>
                   <div class="accordion-content2 p-[1.1vw] bg-white hidden">
-                    <p class="flex gap-[0.83vw] text-[1.38vw]">
+                    <p class="flex gap-[0.83vw] text-[3vw] md:text-[1.38vw]">
                       <span class="text-[#F36B03]">A.</span>
                       <span>
                         記事数や内容にもよりますが、<span class="text-[#F36B03]"
@@ -2207,16 +2856,16 @@
                 </div>
                 <div class="accordion-item2 border-b-2 border-gray-200">
                   <button
-                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
+                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[3vw] md:text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[3.5vw] md:text-[1.66vw]">
                       <span class="text-[#2FADCA]">Q.</span>
                       修正回数に制限はありますか？
                     </h3>
                     <span id="question-triangle">◀</span>
                   </button>
                   <div class="accordion-content2 p-[1.1vw] bg-white hidden">
-                    <p class="flex gap-[0.83vw] text-[1.38vw]">
+                    <p class="flex gap-[0.83vw] text-[3vw] md:text-[1.38vw]">
                       <span class="text-[#F36B03]">A.</span>
                       <span>
                         <span class="text-[#F36B03]">無料修正は基本2回まで</span
@@ -2227,16 +2876,16 @@
                 </div>
                 <div class="accordion-item2 border-b-2 border-gray-200">
                   <button
-                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
+                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[3vw] md:text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[3.5vw] md:text-[1.66vw]">
                       <span class="text-[#2FADCA]">Q.</span>
                       不定期発注も大丈夫ですか？
                     </h3>
                     <span id="question-triangle">◀</span>
                   </button>
                   <div class="accordion-content2 p-[1.1vw] bg-white hidden">
-                    <p class="flex gap-[0.83vw] text-[1.38vw]">
+                    <p class="flex gap-[0.83vw] text-[3vw] md:text-[1.38vw]">
                       <span class="text-[#F36B03]">A.</span>
                       <span>
                         <span class="text-[#F36B03]"
@@ -2248,16 +2897,16 @@
                 </div>
                 <div class="accordion-item2 border-b-2 border-gray-200">
                   <button
-                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
+                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[3vw] md:text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[3.5vw] md:text-[1.66vw]">
                       <span class="text-[#2FADCA]">Q.</span>
                       相場観や依頼のやり方などもわからないのですが...。
                     </h3>
                     <span id="question-triangle">◀</span>
                   </button>
                   <div class="accordion-content2 p-[1.1vw] bg-white hidden">
-                    <p class="flex gap-[0.83vw] text-[1.38vw]">
+                    <p class="flex gap-[0.83vw] text-[3vw] md:text-[1.38vw]">
                       <span class="text-[#F36B03]">A.</span>
                       <span>
                         「MokuMoku」の調査範囲で相場観をお伝えすることは可能です。<br />依頼のやり方がわからない方からのご相談も多いため、<span
@@ -2270,16 +2919,16 @@
                 </div>
                 <div class="accordion-item2 border-b-2 border-gray-200">
                   <button
-                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
+                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[3vw] md:text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[3.5vw] md:text-[1.66vw]">
                       <span class="text-[#2FADCA]">Q.</span>
                       割引プランはありますか？
                     </h3>
                     <span id="question-triangle">◀</span>
                   </button>
                   <div class="accordion-content2 p-[1.1vw] bg-white hidden">
-                    <p class="flex gap-[0.83vw] text-[1.38vw]">
+                    <p class="flex gap-[0.83vw] text-[3vw] md:text-[1.38vw]">
                       <span class="text-[#F36B03]">A.</span>
                       <span>
                         <span class="text-[#F36B03]"
@@ -2295,16 +2944,16 @@
                 </div>
                 <div class="accordion-item2 border-b-2 border-gray-200">
                   <button
-                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
+                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[3vw] md:text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[3.5vw] md:text-[1.66vw]">
                       <span class="text-[#2FADCA]">Q.</span>
                       AIライティングについて教えてください。
                     </h3>
                     <span id="question-triangle">◀</span>
                   </button>
                   <div class="accordion-content2 p-[1.1vw] bg-white hidden">
-                    <p class="flex gap-[0.83vw] text-[1.38vw]">
+                    <p class="flex gap-[0.83vw] text-[3vw] md:text-[1.38vw]">
                       <span class="text-[#F36B03]">A.</span>
                       <span>
                         MokuMokuでは、お客様のご要望次第では<span
@@ -2317,22 +2966,22 @@
                 </div>
                 <div class="accordion-item2">
                   <button
-                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
+                    class="accordion-header2 w-full text-left py-[0.83vw] px-[1.1vw] font-bold text-[3vw] md:text-[1.25vw] font-medium focus:outline-none flex justify-between hover:bg-orange-300 duration-100"
                   >
-                    <h3 class="inline-block text-[1.66vw]">
+                    <h3 class="inline-block text-[3.5vw] md:text-[1.66vw]">
                       <span class="text-[#2FADCA]">Q.</span>
                       障がい者雇用の促進とは？
                     </h3>
                     <span id="question-triangle">◀</span>
                   </button>
                   <div class="accordion-content2 p-[1.1vw] bg-white hidden">
-                    <p class="flex gap-[0.83vw] text-[1.38vw]">
+                    <p class="flex gap-[0.83vw] text-[3vw] md:text-[1.38vw]">
                       <span class="text-[#F36B03]">A.</span>
                       <span
                         >「MokuMoku」は特定非営利活動法人こんぺいとう企画が運営しております。<br />ライタースクールの運営を行うなどして個人のスキルアップを図り、<span
                           class="text-[#F36B03]"
                           >障がいを抱える方でもライティングを通して社会に価値提供できる仕組みを構築</span
-                        >しております。<br />なお、登録ライターには健常者ライターと障がい者ライターがおり、適正に合わせてチームを編成することで品質を担保いたします。<br /><br />障がい者ライターについては直接雇用も可能となっておりますのでお気軽にご相談ください。</span
+                        >しております。<br />なお、登録ライターには障がいの有無に限らず多様なライターがおり、適正に合わせてチームを編成することで品質を担保いたします。<br /><br />障がい者ライターについては直接雇用も可能となっておりますのでお気軽にご相談ください。</span
                       >
                     </p>
                   </div>
@@ -2345,22 +2994,24 @@
 
       <section
         id=""
-        class="w-full bg-gradient-to-b from-[#33CC8C] to-[#6CA7E2] pb-[10vw]"
+        class="w-full bg-gradient-to-b from-[#6CA7E2] to-[#6CA7E2] pb-[10vw]"
       >
-        <div class="w-9/12">
+        <div class="w-[100%] m-auto md:m-0 md:w-9/12">
           <div
-            class="w-[95%] m-auto bg-white relative pb-[2.2vw] rounded-bl-xl rounded-br-xl"
+            class="w-[100%] md:w-[95%] m-auto bg-white relative pb-[2.2vw] rounded-bl-xl rounded-br-xl"
           >
-            <h2 class="text-center font-bold text-[2.8vw] pt-[5.5vw]">
+            <h2
+              class="text-center font-bold text-[5vw] md:text-[2.8vw] pt-[5.5vw]"
+            >
               お問い合わせフォーム
             </h2>
 
             <div
-              class="bg-white w-9/12 m-auto pt-[2.2vw] flex items-center justify-center text-whiteb mb-[6.6vw] relative z-20 rounded-lg"
+              class="bg-white w-10/12 md:w-7/12 m-auto pt-[2.2vw] flex items-center justify-center text-whiteb mb-[6.6vw] relative z-20 rounded-[0.55vw]"
             >
-              <div class="w-11/12 m-auto relative">
+              <div class="w-full md:w-11/12 m-auto relative">
                 <!-- <p
-                  class="absolute text-white text-center bg-[#F36B03] text-[1.66vw] px-[1.1vw] py-[1.1vw] rounded-lg top-[-85px] left-[50%] translate-x-[-50%] w-[99%]"
+                  class="absolute text-white text-center bg-[#F36B03] text-[1.66vw] px-[1.1vw] py-[1.1vw] rounded-[0.55vw] top-[-85px] left-[50%] translate-x-[-50%] w-[99%]"
                 >
                   お問い合わせはここから！
                 </p> -->
@@ -2370,10 +3021,12 @@
                   action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfx6fcRvnuQ_HnAul8x4MX5sGVihCcMDZE-x810MALP-E-t7w/formResponse"
                 >
                   <div class="flex flex-col gap-[1.1vw]">
-                    <div class="border-2 border-gray-300 rounded-md p-[0.55vw]">
+                    <div
+                      class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.5vw]"
+                    >
                       <p
                         for="email"
-                        class="text-gray-600 text-[0.97vw] font-bold"
+                        class="text-gray-600 text-[3.5vw] md:text-[0.9vw] font-bold"
                       >
                         会社名
                       </p>
@@ -2382,13 +3035,15 @@
                         type="text"
                         name="entry.929835922"
                         placeholder="株式会社sample"
-                        class="rounded-xl w-full outline-none text-[1.38vw]"
+                        class="rounded-[0.83vw] w-full outline-none text-[4.5vw] md:text-[1.25vw]"
                       />
                     </div>
-                    <div class="border-2 border-gray-300 rounded-md p-[0.55vw]">
+                    <div
+                      class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.5vw]"
+                    >
                       <p
                         for="email"
-                        class="text-gray-600 text-[0.97vw] font-bold"
+                        class="text-gray-600 text-[3.5vw] md:text-[0.9vw] font-bold"
                       >
                         お名前
                       </p>
@@ -2397,13 +3052,15 @@
                         type="text"
                         name="entry.93001158"
                         placeholder="MokuMoku太郎"
-                        class="rounded-xl w-full outline-none text-[1.38vw]"
+                        class="rounded-[0.83vw] w-full outline-none text-[4.5vw] md:text-[1.25vw]"
                       />
                     </div>
-                    <div class="border-2 border-gray-300 rounded-md p-[0.55vw]">
+                    <div
+                      class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.5vw]"
+                    >
                       <p
                         for="email"
-                        class="text-gray-600 text-[0.97vw] font-bold"
+                        class="text-gray-600 text-[3.5vw] md:text-[0.9vw] font-bold"
                       >
                         メールアドレス
                       </p>
@@ -2412,13 +3069,15 @@
                         type="text"
                         name="entry.96562785"
                         placeholder="example@mail.co.jp"
-                        class="rounded-xl w-full outline-none text-[1.38vw]"
+                        class="rounded-[0.83vw] w-full outline-none text-[4.5vw] md:text-[1.25vw]"
                       />
                     </div>
-                    <div class="border-2 border-gray-300 rounded-md p-[0.55vw]">
+                    <div
+                      class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.5vw]"
+                    >
                       <p
                         for="email"
-                        class="text-gray-600 text-[0.97vw] font-bold"
+                        class="text-gray-600 text-[3.5vw] md:text-[0.9vw] font-bold"
                       >
                         電話番号
                       </p>
@@ -2427,13 +3086,15 @@
                         type="text"
                         name="entry.1379716595"
                         placeholder="09000000000"
-                        class="rounded-xl w-full outline-none text-[1.38vw]"
+                        class="rounded-[0.83vw] w-full outline-none text-[4.5vw] md:text-[1.25vw]"
                       />
                     </div>
-                    <div class="border-2 border-gray-300 rounded-md p-[0.55vw]">
+                    <div
+                      class="border-[0.138vw] border-gray-300 rounded-[0.416vw] p-[0.5vw]"
+                    >
                       <p
                         for="msg"
-                        class="text-gray-600 text-[0.97vw] font-bold"
+                        class="text-gray-600 text-[3.5vw] md:text-[0.9vw] font-bold"
                       >
                         お問い合わせ内容
                       </p>
@@ -2442,11 +3103,11 @@
                         name="entry.52770049"
                         placeholder="①ジャンル / ②文字数 / ③記事数 / ④ご予算 / ⑤お問い合わせ詳細など"
                         rows="5"
-                        class="rounded-xl w-full outline-none text-[1.2vw]"
+                        class="rounded-[0.83vw] w-full outline-none text-[4.5vw] md:text-[1.2vw]"
                       ></textarea>
                     </div>
                   </div>
-                  <p class="text-[0.8vw]">
+                  <p class="text-[3.2vw] md:text-[0.8vw]">
                     ※【相談テンプレ】①ジャンル / ②文字数 / ③記事数 / ④ご予算
                     /⑤お問い合わせ詳細（コピペ利用可）
                   </p>
@@ -2454,7 +3115,7 @@
                     type="submit"
                     name="button"
                     value="送信"
-                    class="rounded-lg bg-[#F36B03] text-white w-full py-[1.38vw] mt-[1.1vw] text-[1.38vw] hover:bg-yellow-500 duration-200"
+                    class="rounded-[0.55vw] bg-[#F36B03] text-white w-full py-[1.2vw] mt-[2vw] md:mt-[1.1vw] text-[4vw] md:text-[1.25vw] hover:bg-yellow-500 duration-200"
                   >
                     問い合わせを送る
                   </button>
@@ -2466,7 +3127,9 @@
       </section>
     </div>
 
-    <footer class="w-9/12 text-white bg-[#6CA7E2] py-1 text-[1.1vw]">
+    <footer
+      class="w-[100%] m-auto md:m-0 md:w-9/12 text-white bg-[#6CA7E2] py-1 text-[2.6vw] md:text-[1.1vw] pb-[20vw] md:pb-0"
+    >
       <p class="text-center pb-2">
         NPO法人 こんぺいとう企画<br />
         〒8740927
@@ -2532,6 +3195,15 @@
         dots: true,
         prevArrow: '<button type="button" class="slick-prev">&#9664;</button>',
         nextArrow: '<button type="button" class="slick-next">&#9654;</button>',
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+        ],
       });
     });
 
